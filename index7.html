@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AURELIA | Gallery</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+
+</head>
+
+
+<body class="bg-[#f7f4ee] text-[#171513]">
+
+
+  <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+  <header class="absolute top-0 left-0 w-full z-50">
+
+    <nav class="max-w-7xl mx-auto px-6 lg:px-12 py-6
+              flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="#" class="font-serif text-3xl tracking-wide text-white">
+        AURELIA
+      </a>
+
+
+      <!-- BOOK BUTTON -->
+      <a href="#" class="hidden md:inline-flex items-center gap-3
+              bg-[#b8945f] text-white
+              px-6 py-3 rounded-full
+              hover:bg-white hover:text-[#171513]
+              transition duration-300">
+
+        Book Your Stay
+
+        <span>→</span>
+
+      </a>
+
+
+      <!-- MOBILE -->
+      <button class="md:hidden text-white text-2xl">
+        <a href="#" class="text-[#d6bc91]">
+          <i class="fa-solid fa-photo-film"></i>
+        </a>
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+     HERO
+===================================================== -->
+
+  <section class="relative h-[80vh] min-h-[600px]
+                flex items-center">
+
+    <!-- HERO IMAGE -->
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=90"
+      alt="Luxury hotel interior" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="relative z-10
+              max-w-7xl mx-auto
+              px-6 lg:px-12 w-full">
+
+      <div class="max-w-3xl">
+
+        <p class="text-[#d6bc91] uppercase
+                tracking-[6px] text-sm mb-6">
+          AURELIA Moments
+        </p>
+
+        <h1 class="font-serif text-white
+                 text-6xl md:text-8xl
+                 leading-tight mb-6">
+
+          The Gallery
+
+        </h1>
+
+        <p class="text-white/80 text-lg
+                leading-8 max-w-xl">
+
+          Step inside AURELIA and discover
+          spaces designed around beauty,
+          comfort and unforgettable moments.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- SCROLL -->
+    <div class="absolute bottom-8 left-1/2
+              -translate-x-1/2 text-white/70
+              text-xs uppercase tracking-[4px]">
+
+      Scroll to explore
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     INTRO
+===================================================== -->
+
+  <section class="py-24">
+
+    <div class="max-w-4xl mx-auto
+              px-6 text-center">
+
+      <p class="text-[#b8945f] uppercase
+              tracking-[4px] text-sm mb-5">
+        Discover AURELIA
+      </p>
+
+      <h2 class="font-serif text-4xl md:text-6xl
+               leading-tight mb-6">
+
+        Beauty in
+        <span class="italic">
+          every detail.
+        </span>
+
+      </h2>
+
+      <p class="text-gray-600 leading-8
+              max-w-2xl mx-auto">
+
+        From elegant rooms and refined dining
+        spaces to peaceful wellness areas,
+        explore the world of AURELIA through
+        our collection of photographs.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     MAIN GALLERY
+===================================================== -->
+
+  <section class="pb-24">
+
+    <div class="max-w-7xl mx-auto
+              px-6 lg:px-12">
+
+
+      <!-- ================= ROW 1 ================= -->
+
+      <div class="grid lg:grid-cols-3 gap-5 mb-5">
+
+
+        <!-- LARGE IMAGE -->
+        <div class="lg:col-span-2
+                  relative group overflow-hidden
+                  rounded-[28px] h-[520px]">
+
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90"
+            alt="Luxury hotel suite" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-7 left-7">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Rooms & Suites
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-3xl mt-2">
+              The Presidential Suite
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <!-- SMALL IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[520px]">
+
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=90"
+            alt="Luxury hotel room" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-6 left-6">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Accommodation
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-2xl mt-2">
+              Elegant Rooms
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= ROW 2 ================= -->
+
+      <div class="grid md:grid-cols-3 gap-5 mb-5">
+
+
+        <!-- IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[430px]">
+
+          <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=90"
+            alt="Luxury swimming pool" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-6 left-6">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Wellness
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-2xl mt-2">
+              Infinity Pool
+            </h3>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[430px]">
+
+          <img
+            src="https://oleanderfarms.com/wp-content/uploads/elementor/thumbs/DSC9347-scaled-1-qwb6bq87w6plicg1syb2a6k558hsr0kd5rt3lw32ew.jpeg"
+            alt="Luxury spa" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-6 left-6">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Wellness
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-2xl mt-2">
+              Luxury Spa
+            </h3>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[430px]">
+
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1000&q=90"
+            alt="Luxury hotel restaurant" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-6 left-6">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Dining
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-2xl mt-2">
+              Fine Dining
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= ROW 3 ================= -->
+
+      <div class="grid lg:grid-cols-2 gap-5">
+
+
+        <!-- IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[500px]">
+
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=90"
+            alt="Elegant restaurant interior" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-7 left-7">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Dining
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-3xl mt-2">
+              An Evening at AURELIA
+            </h3>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- IMAGE -->
+        <div class="relative group overflow-hidden
+                  rounded-[28px] h-[500px]">
+
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=90"
+            alt="Luxury hotel lounge" class="w-full h-full object-cover
+                 group-hover:scale-105
+                 transition duration-700">
+
+          <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-black/60 via-transparent
+                    to-transparent">
+          </div>
+
+          <div class="absolute bottom-7 left-7">
+
+            <p class="text-[#d6bc91] text-xs
+                    uppercase tracking-[3px]">
+              Interiors
+            </p>
+
+            <h3 class="font-serif text-white
+                     text-3xl mt-2">
+              Designed for Living
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     DARK FEATURE
+===================================================== -->
+
+  <section class="bg-[#171513] py-28">
+
+    <div class="max-w-7xl mx-auto
+              px-6 lg:px-12">
+
+      <div class="grid lg:grid-cols-2
+                gap-16 items-center">
+
+
+        <!-- CONTENT -->
+        <div>
+
+          <p class="text-[#d6bc91] uppercase
+                  tracking-[4px] text-sm mb-5">
+            The AURELIA Experience
+          </p>
+
+          <h2 class="font-serif text-white
+                   text-5xl md:text-6xl
+                   leading-tight mb-6">
+
+            A world made
+            <span class="italic">
+              for you.
+            </span>
+
+          </h2>
+
+          <p class="text-white/60
+                  leading-8 max-w-lg mb-8">
+
+            Every corner of AURELIA has been
+            thoughtfully designed to create
+            moments that stay with you long
+            after your journey ends.
+
+          </p>
+
+
+          <a href="#" class="inline-flex items-center gap-4
+                  border border-[#b8945f]
+                  text-white
+                  px-7 py-4 rounded-full
+                  hover:bg-[#b8945f]
+                  transition duration-300">
+
+            Explore AURELIA
+
+            <span>→</span>
+
+          </a>
+
+        </div>
+
+
+
+        <!-- IMAGE -->
+        <div class="overflow-hidden
+                  rounded-[32px]">
+
+          <img
+            src="https://cayugahospitality.com/core/uploads/2022/09/DALL%C2%B7E-2024-08-15-10.27.03-A-high-end-hotel-lobby-or-guest-room-featuring-modern-amenities-and-advanced-technology.-The-setting-includes-elegant-furniture-sleek-design-elements-768x768.webp"
+            alt="Luxury hotel interior" class="w-full h-[550px]
+                 object-cover
+                 hover:scale-105
+                 transition duration-700">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     CTA
+===================================================== -->
+
+  <section class="py-28 bg-[#f7f4ee]">
+
+    <div class="max-w-4xl mx-auto
+              px-6 text-center">
+
+      <p class="text-[#b8945f] uppercase
+              tracking-[4px] text-sm mb-5">
+        Your Story Awaits
+      </p>
+
+      <h2 class="font-serif text-5xl md:text-6xl
+               leading-tight mb-6">
+
+        Come and create
+        <span class="italic">
+          your own memories.
+        </span>
+
+      </h2>
+
+      <p class="text-gray-600
+              leading-7 max-w-xl
+              mx-auto mb-8">
+
+        Experience the elegance,
+        comfort and hospitality of AURELIA.
+
+      </p>
+
+
+      <a href="#" class="inline-flex items-center gap-4
+              bg-[#171513] text-white
+              px-8 py-4 rounded-full
+              hover:bg-[#b8945f]
+              transition duration-300">
+
+        Book Your Stay
+
+        <span>→</span>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+  <footer class="bg-[#11100f] text-white">
+
+    <div class="max-w-7xl mx-auto
+              px-6 lg:px-12 py-16">
+
+      <div class="grid md:grid-cols-2
+                lg:grid-cols-4 gap-12">
+
+
+        <!-- BRAND -->
+        <div>
+
+          <h2 class="font-serif text-3xl mb-5">
+            AURELIA
+          </h2>
+
+          <p class="text-white/50
+                  leading-7 max-w-xs">
+
+            A timeless luxury hotel where
+            exceptional hospitality meets
+            unforgettable experiences.
+
+          </p>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                   uppercase tracking-[3px]
+                   text-sm mb-6">
+            Explore
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <a href="#" class="block hover:text-white">
+              Home
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Rooms
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Dining
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Facilities
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Gallery
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                   uppercase tracking-[3px]
+                   text-sm mb-6">
+            Contact
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <p>
+              24 Palace Road,<br>
+              Indore, Madhya Pradesh
+            </p>
+
+            <p>
+              +91 98765 43210
+            </p>
+
+            <p>
+              hello@aureliahotel.com
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                   uppercase tracking-[3px]
+                   text-sm mb-6">
+            Follow Us
+          </h3>
+
+          <div class="flex gap-3">
+
+            <a href="#" class="w-10 h-10 rounded-full
+                    border border-white/20
+                    flex items-center justify-center
+                    hover:bg-[#b8945f]
+                    hover:border-[#b8945f]
+                    transition">
+              f
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full
+                    border border-white/20
+                    flex items-center justify-center
+                    hover:bg-[#b8945f]
+                    hover:border-[#b8945f]
+                    transition">
+              in
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full
+                    border border-white/20
+                    flex items-center justify-center
+                    hover:bg-[#b8945f]
+                    hover:border-[#b8945f]
+                    transition">
+              ig
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- GOLD LINE -->
+      <div class="h-px
+                bg-gradient-to-r
+                from-transparent
+                via-[#b8945f]
+                to-transparent
+                mt-14">
+      </div>
+
+
+      <!-- BOTTOM -->
+      <div class="flex flex-col md:flex-row
+                justify-between items-center
+                gap-4 pt-7
+                text-sm text-white/40">
+
+        <p>
+          © 2026 AURELIA Hotel.
+          All rights reserved.
+        </p>
+
+        <div class="flex gap-6">
+
+          <a href="#" class="hover:text-white">
+            Privacy Policy
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Terms
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Cookies
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now | The Aurelia</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-[#08090a] text-white">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="absolute top-0 left-0 w-full z-50">
+
+        <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <a href="index.html">
+
+                <h1 class="text-xl tracking-[3px]">
+                    THE AURELIA
+                </h1>
+
+                <p class="text-[8px] tracking-[4px] text-[#d6b36a]">
+                    LUXURY HOTEL
+                </p>
+
+            </a>
+
+            <!-- BACK HOME -->
+            <a href="index.html" class="text-sm text-gray-300 hover:text-[#d6b36a]
+                transition flex items-center gap-2">
+
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= BOOKING SECTION ================= -->
+
+    <main class="min-h-screen px-5 pt-32 pb-16">
+
+        <div class="max-w-6xl mx-auto">
+
+
+            <!-- HEADING -->
+
+            <div class="text-center mb-12">
+
+                <p class="text-[#d6b36a] text-xs tracking-[5px] uppercase mb-3">
+                    Reserve Your Stay
+                </p>
+
+                <h2 class="text-4xl sm:text-5xl font-light tracking-wide">
+                    Book Your Stay
+                </h2>
+
+                <p class="text-gray-400 text-sm max-w-xl mx-auto mt-4">
+                    Experience exceptional comfort, timeless elegance,
+                    and personalized hospitality at The Aurelia.
+                </p>
+
+            </div>
+
+
+            <!-- ================= MAIN GRID ================= -->
+
+            <div class="grid lg:grid-cols-3 gap-8">
+
+
+                <!-- ================= BOOKING FORM ================= -->
+
+                <div class="lg:col-span-2">
+
+                    <div class="bg-[#111315] border border-[#292b2d]
+                        p-6 sm:p-8">
+
+                        <div class="flex items-center gap-3 mb-7">
+
+                            <div class="w-10 h-10 border border-[#d6b36a]
+                                flex items-center justify-center">
+
+                                <i class="fa-solid fa-calendar-check
+                                    text-[#d6b36a]"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="text-xl">
+                                    Reservation Details
+                                </h3>
+
+                                <p class="text-xs text-gray-500">
+                                    Please enter your booking information
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <form id="bookingForm" class="space-y-6">
+
+
+                            <!-- ================= DATES ================= -->
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+
+                                <!-- CHECK IN -->
+
+                                <div>
+
+                                    <label class="block text-sm text-gray-300 mb-2">
+                                        Check-in
+                                    </label>
+
+                                    <div class="relative">
+
+                                        <i class="fa-solid fa-calendar-days
+                                            absolute left-4 top-1/2
+                                            -translate-y-1/2
+                                            text-gray-500"></i>
+
+                                        <input type="date" id="checkin" required class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 pl-11 pr-4
+                                            text-sm text-white
+                                            outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- CHECK OUT -->
+
+                                <div>
+
+                                    <label class="block text-sm text-gray-300 mb-2">
+                                        Check-out
+                                    </label>
+
+                                    <div class="relative">
+
+                                        <i class="fa-solid fa-calendar-days
+                                            absolute left-4 top-1/2
+                                            -translate-y-1/2
+                                            text-gray-500"></i>
+
+                                        <input type="date" id="checkout" required class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 pl-11 pr-4
+                                            text-sm text-white
+                                            outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= GUESTS ================= -->
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+
+                                <!-- ADULTS -->
+
+                                <div>
+
+                                    <label class="block text-sm text-gray-300 mb-2">
+                                        Adults
+                                    </label>
+
+                                    <div class="relative">
+
+                                        <i class="fa-solid fa-user-group
+                                            absolute left-4 top-1/2
+                                            -translate-y-1/2
+                                            text-gray-500"></i>
+
+                                        <select id="adults" class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 pl-11 pr-4
+                                            text-sm outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                            <option value="1">1 Adult</option>
+                                            <option value="2" selected>2 Adults</option>
+                                            <option value="3">3 Adults</option>
+                                            <option value="4">4 Adults</option>
+                                            <option value="5">5 Adults</option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- CHILDREN -->
+
+                                <div>
+
+                                    <label class="block text-sm text-gray-300 mb-2">
+                                        Children
+                                    </label>
+
+                                    <div class="relative">
+
+                                        <i class="fa-solid fa-child
+                                            absolute left-4 top-1/2
+                                            -translate-y-1/2
+                                            text-gray-500"></i>
+
+                                        <select id="children" class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 pl-11 pr-4
+                                            text-sm outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                            <option value="0" selected>
+                                                No Children
+                                            </option>
+
+                                            <option value="1">
+                                                1 Child
+                                            </option>
+
+                                            <option value="2">
+                                                2 Children
+                                            </option>
+
+                                            <option value="3">
+                                                3 Children
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= ROOM ================= -->
+
+                            <div>
+
+                                <label class="block text-sm text-gray-300 mb-2">
+                                    Room Type
+                                </label>
+
+                                <div class="relative">
+
+                                    <i class="fa-solid fa-bed
+                                        absolute left-4 top-1/2
+                                        -translate-y-1/2
+                                        text-gray-500"></i>
+
+                                    <select id="room" required class="w-full bg-[#191b1d]
+                                        border border-[#303234]
+                                        py-3.5 pl-11 pr-4
+                                        text-sm outline-none
+                                        focus:border-[#d6b36a]
+                                        transition">
+
+                                        <option value="Deluxe Room">
+                                            Deluxe Room — ₹12,000 / night
+                                        </option>
+
+                                        <option value="Executive Room">
+                                            Executive Room — ₹14,000 / night
+                                        </option>
+
+                                        <option value="Premium Room">
+                                            Premium Room — ₹16,000 / night
+                                        </option>
+
+                                        <option value="Premium Suite">
+                                            Premium Suite — ₹18,000 / night
+                                        </option>
+
+                                        <option value="Executive Suite">
+                                            Executive Suite — ₹21,000 / night
+                                        </option>
+
+                                        <option value="Aurelia Suite">
+                                            Aurelia Suite — ₹25,000 / night
+                                        </option>
+
+                                        <option value="Royal Suite">
+                                            Royal Suite — ₹38,000 / night
+                                        </option>
+
+                                        <option value="Presidential Suite">
+                                            Presidential Suite — ₹40,000 / night
+                                        </option>
+
+                                        <option value="Other Room">
+                                            Other Room — Contact Hotel
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= GUEST DETAILS ================= -->
+
+                            <div class="pt-4 border-t border-[#292b2d]">
+
+                                <h3 class="text-lg mb-5">
+                                    Guest Information
+                                </h3>
+
+
+                                <div class="grid sm:grid-cols-2 gap-5">
+
+
+                                    <!-- NAME -->
+
+                                    <div>
+
+                                        <label class="block text-sm text-gray-300 mb-2">
+                                            Full Name
+                                        </label>
+
+                                        <input type="text" id="name" placeholder="Your full name" required class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 px-4
+                                            text-sm outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                    </div>
+
+
+                                    <!-- EMAIL -->
+
+                                    <div>
+
+                                        <label class="block text-sm text-gray-300 mb-2">
+                                            Email Address
+                                        </label>
+
+                                        <input type="email" id="email" placeholder="Your email address" required class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 px-4
+                                            text-sm outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                    </div>
+
+
+                                    <!-- PHONE -->
+
+                                    <div class="sm:col-span-2">
+
+                                        <label class="block text-sm text-gray-300 mb-2">
+                                            Phone Number
+                                        </label>
+
+                                        <input type="tel" id="phone" placeholder="Your phone number" required class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 px-4
+                                            text-sm outline-none
+                                            focus:border-[#d6b36a]
+                                            transition">
+
+                                    </div>
+
+
+                                    <!-- SPECIAL REQUEST -->
+
+                                    <div class="sm:col-span-2">
+
+                                        <label class="block text-sm text-gray-300 mb-2">
+                                            Special Requests
+                                            <span class="text-gray-600">
+                                                (Optional)
+                                            </span>
+                                        </label>
+
+                                        <textarea id="requests" rows="4"
+                                            placeholder="Tell us if you have any special requests..." class="w-full bg-[#191b1d]
+                                            border border-[#303234]
+                                            py-3.5 px-4
+                                            text-sm outline-none
+                                            resize-none
+                                            focus:border-[#d6b36a]
+                                            transition"></textarea>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- TERMS -->
+
+                            <div class="flex items-start gap-2">
+
+                                <input type="checkbox" id="terms" required class="mt-1 accent-[#d6b36a]">
+
+                                <label for="terms" class="text-xs text-gray-400 leading-5">
+
+                                    I agree to the booking
+                                    <a href="#" class="text-[#d6b36a] hover:underline">
+                                        Terms & Conditions
+                                    </a>.
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- SUBMIT -->
+
+                            <button type="submit" class="w-full bg-[#d6b36a]
+                                text-black py-4
+                                font-semibold text-sm
+                                tracking-wide
+                                hover:bg-[#c5a25c]
+                                transition">
+
+                                <i class="fa-solid fa-calendar-check mr-2"></i>
+
+                                Confirm Booking
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= BOOKING SUMMARY ================= -->
+
+                <div>
+
+                    <div class="bg-[#111315]
+                        border border-[#292b2d]
+                        p-6 sticky top-8">
+
+                        <p class="text-[#d6b36a] text-xs
+                            tracking-[3px] uppercase mb-3">
+
+                            Your Reservation
+
+                        </p>
+
+                        <h3 class="text-2xl font-light mb-7">
+                            Booking Summary
+                        </h3>
+
+
+                        <!-- ROOM IMAGE -->
+
+                        <div class="h-44 overflow-hidden mb-6">
+
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                                alt="Luxury Hotel Room" class="w-full h-full object-cover">
+
+                        </div>
+
+
+                        <!-- SUMMARY -->
+
+                        <div class="space-y-4 text-sm">
+
+
+                            <div class="flex justify-between gap-4">
+
+                                <span class="text-gray-500">
+                                    Check-in
+                                </span>
+
+                                <span id="summaryCheckin">
+                                    —
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex justify-between gap-4">
+
+                                <span class="text-gray-500">
+                                    Check-out
+                                </span>
+
+                                <span id="summaryCheckout">
+                                    —
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex justify-between gap-4">
+
+                                <span class="text-gray-500">
+                                    Guests
+                                </span>
+
+                                <span id="summaryGuests">
+                                    2 Adults
+                                </span>
+
+                            </div>
+
+
+                            <div class="flex justify-between gap-4">
+
+                                <span class="text-gray-500">
+                                    Room
+                                </span>
+
+                                <span id="summaryRoom" class="text-right">
+                                    Not selected
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PRICE -->
+
+                        <div class="border-t border-[#303234]
+                            mt-6 pt-6">
+
+                            <div class="flex justify-between">
+
+                                <span class="text-gray-400">
+                                    Estimated Total
+                                </span>
+
+                                <span id="totalPrice" class="text-xl text-[#d6b36a]">
+                                    ₹0
+                                </span>
+
+                            </div>
+
+                            <p class="text-[11px] text-gray-600 mt-2">
+                                Final price will be confirmed after
+                                availability verification.
+                            </p>
+
+                        </div>
+
+
+                        <!-- FEATURES -->
+
+                        <div class="border-t border-[#303234]
+                            mt-6 pt-6 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-400">
+
+                                <i class="fa-solid fa-wifi text-[#d6b36a]"></i>
+                                Complimentary Wi-Fi
+
+                            </div>
+
+                            <div class="flex items-center gap-3 text-xs text-gray-400">
+
+                                <i class="fa-solid fa-mug-hot text-[#d6b36a]"></i>
+                                Daily Breakfast
+
+                            </div>
+
+                            <div class="flex items-center gap-3 text-xs text-gray-400">
+
+                                <i class="fa-solid fa-car text-[#d6b36a]"></i>
+                                Valet Parking
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const checkin = document.getElementById("checkin");
+        const checkout = document.getElementById("checkout");
+
+        const adults = document.getElementById("adults");
+        const children = document.getElementById("children");
+
+        const room = document.getElementById("room");
+
+        const summaryCheckin =
+            document.getElementById("summaryCheckin");
+
+        const summaryCheckout =
+            document.getElementById("summaryCheckout");
+
+        const summaryGuests =
+            document.getElementById("summaryGuests");
+
+        const summaryRoom =
+            document.getElementById("summaryRoom");
+
+        const totalPrice =
+            document.getElementById("totalPrice");
+
+
+        // TODAY DATE
+
+        const today = new Date().toISOString().split("T")[0];
+
+        checkin.min = today;
+        checkout.min = today;
+
+
+        // CHECK-IN CHANGE
+
+        checkin.addEventListener("change", () => {
+
+            checkout.min = checkin.value;
+
+            summaryCheckin.textContent =
+                checkin.value || "—";
+
+        });
+
+
+        // CHECK-OUT CHANGE
+
+        checkout.addEventListener("change", () => {
+
+            summaryCheckout.textContent =
+                checkout.value || "—";
+
+            calculatePrice();
+
+        });
+
+
+        // GUEST CHANGE
+
+        adults.addEventListener("change", updateGuests);
+        children.addEventListener("change", updateGuests);
+
+
+        function updateGuests() {
+
+            const adultCount = adults.value;
+            const childCount = children.value;
+
+            summaryGuests.textContent =
+                adultCount + " Adults, " +
+                childCount + " Children";
+
+        }
+
+
+        // ROOM CHANGE
+
+        room.addEventListener("change", () => {
+
+            summaryRoom.textContent =
+                room.value || "Not selected";
+
+            calculatePrice();
+
+        });
+
+
+        // CALCULATE PRICE
+
+        function calculatePrice() {
+
+            if (!checkin.value ||
+                !checkout.value ||
+                !room.value) {
+
+                totalPrice.textContent = "₹0";
+                return;
+            }
+
+
+            const start =
+                new Date(checkin.value);
+
+            const end =
+                new Date(checkout.value);
+
+
+            const difference =
+                end - start;
+
+            const nights =
+                difference / (1000 * 60 * 60 * 24);
+
+
+            if (nights <= 0) {
+
+                totalPrice.textContent = "₹0";
+                return;
+
+            }
+
+
+            let price = 0;
+
+
+            if (room.value === "Deluxe Room") {
+                price = 12000;
+            }
+
+            else if (room.value === "Executive Room") {
+                price = 14000;
+            }
+
+            else if (room.value === "Premium Room") {
+                price = 16000;
+            }
+
+            else if (room.value === "Premium Suite") {
+                price = 18000;
+            }
+
+            else if (room.value === "Executive Suite") {
+                price = 21000;
+            }
+
+            else if (room.value === "Aurelia Suite") {
+                price = 25000;
+            }
+
+            else if (room.value === "Royal Suite") {
+                price = 38000;
+            }
+
+            else if (room.value === "Presidential Suite") {
+                price = 40000;
+            }
+
+            else if (room.value === "Other Room") {
+                totalPrice.textContent = "Contact Hotel";
+                return;
+            }
+
+
+            const total =
+                price * nights;
+
+
+            totalPrice.textContent =
+                "₹" + total.toLocaleString("en-IN");
+
+        }
+
+
+        // FORM SUBMIT
+
+        const bookingForm =
+            document.getElementById("bookingForm");
+
+
+        bookingForm.addEventListener("submit", (e) => {
+
+            e.preventDefault();
+
+
+            if (checkout.value <= checkin.value) {
+
+                alert(
+                    "Check-out date must be after check-in date."
+                );
+
+                return;
+
+            }
+
+
+            alert(
+                "Your booking request has been submitted successfully!"
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>

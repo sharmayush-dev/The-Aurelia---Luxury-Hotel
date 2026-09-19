@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | The Aurelia</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="min-h-screen bg-[#08090a] text-white">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="absolute top-0 left-0 w-full z-50">
+
+        <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <a href="index.html">
+
+                <h1 class="text-xl tracking-[3px]">
+                    THE AURELIA
+                </h1>
+
+                <p class="text-[8px] tracking-[4px] text-[#d6b36a]">
+                    LUXURY HOTEL
+                </p>
+
+            </a>
+
+            <!-- BACK HOME -->
+            <a href="index.html"
+                class="text-sm hover:text-[#d6b36a] transition flex items-center gap-2">
+
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CREATE ACCOUNT ================= -->
+
+    <main class="min-h-screen flex items-center justify-center px-5 py-24">
+
+        <div class="w-full max-w-lg">
+
+            <!-- CARD -->
+
+            <div class="bg-[#111315] border border-[#2a2b2c]
+                p-7 sm:p-10 shadow-2xl">
+
+                <!-- HEADING -->
+
+                <div class="text-center mb-8">
+
+                    <div class="w-14 h-14 mx-auto mb-5 rounded-full
+                        border border-[#d6b36a]
+                        flex items-center justify-center">
+
+                        <i class="fa-solid fa-user-plus
+                            text-xl text-[#d6b36a]"></i>
+
+                    </div>
+
+                    <p class="text-[#d6b36a] text-xs
+                        tracking-[4px] uppercase mb-3">
+                        Join The Aurelia
+                    </p>
+
+                    <h2 class="text-3xl font-light tracking-wide">
+                        Create Account
+                    </h2>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Create your account and enjoy a seamless
+                        luxury experience.
+                    </p>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="registerForm" class="space-y-5">
+
+
+                    <!-- FULL NAME -->
+
+                    <div>
+
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Full Name
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-user
+                                absolute left-4 top-1/2
+                                -translate-y-1/2 text-gray-500"></i>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                required
+                                class="w-full bg-[#191b1d]
+                                border border-[#303234]
+                                py-3.5 pl-11 pr-4
+                                text-sm outline-none
+                                focus:border-[#d6b36a]
+                                transition">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div>
+
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Email Address
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-envelope
+                                absolute left-4 top-1/2
+                                -translate-y-1/2 text-gray-500"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                                class="w-full bg-[#191b1d]
+                                border border-[#303234]
+                                py-3.5 pl-11 pr-4
+                                text-sm outline-none
+                                focus:border-[#d6b36a]
+                                transition">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div>
+
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Phone Number
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-phone
+                                absolute left-4 top-1/2
+                                -translate-y-1/2 text-gray-500"></i>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                                required
+                                class="w-full bg-[#191b1d]
+                                border border-[#303234]
+                                py-3.5 pl-11 pr-4
+                                text-sm outline-none
+                                focus:border-[#d6b36a]
+                                transition">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div>
+
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Password
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-lock
+                                absolute left-4 top-1/2
+                                -translate-y-1/2 text-gray-500"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create a password"
+                                required
+                                class="w-full bg-[#191b1d]
+                                border border-[#303234]
+                                py-3.5 pl-11 pr-12
+                                text-sm outline-none
+                                focus:border-[#d6b36a]
+                                transition">
+
+                            <button
+                                type="button"
+                                id="showPassword"
+                                class="absolute right-4 top-1/2
+                                -translate-y-1/2 text-gray-500
+                                hover:text-[#d6b36a]">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div>
+
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Confirm Password
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-lock
+                                absolute left-4 top-1/2
+                                -translate-y-1/2 text-gray-500"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                required
+                                class="w-full bg-[#191b1d]
+                                border border-[#303234]
+                                py-3.5 pl-11 pr-4
+                                text-sm outline-none
+                                focus:border-[#d6b36a]
+                                transition">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="flex items-start gap-2">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                            class="mt-1 accent-[#d6b36a]">
+
+                        <label for="terms"
+                            class="text-xs text-gray-400 leading-5">
+
+                            I agree to the
+                            <a href="#"
+                                class="text-[#d6b36a] hover:underline">
+                                Terms & Conditions
+                            </a>
+                            and
+                            <a href="#"
+                                class="text-[#d6b36a] hover:underline">
+                                Privacy Policy
+                            </a>.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="w-full bg-[#d6b36a]
+                        text-black py-3.5
+                        text-sm font-semibold
+                        tracking-wide
+                        hover:bg-[#c5a25c]
+                        transition">
+
+                        <i class="fa-solid fa-user-plus mr-2"></i>
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+
+                <!-- DIVIDER -->
+
+                <div class="flex items-center gap-4 my-7">
+
+                    <div class="h-px bg-[#303234] flex-1"></div>
+
+                    <span class="text-xs text-gray-500">
+                        OR
+                    </span>
+
+                    <div class="h-px bg-[#303234] flex-1"></div>
+
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <button
+                    class="w-full border border-[#303234]
+                    py-3 text-sm text-gray-300
+                    hover:border-[#d6b36a]
+                    hover:text-[#d6b36a]
+                    transition">
+
+                    <i class="fa-brands fa-google mr-2"></i>
+
+                    Sign up with Google
+
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <p class="text-center text-sm text-gray-400 mt-7">
+
+                    Already have an account?
+
+                    <a href="login.html"
+                        class="text-[#d6b36a] hover:underline">
+
+                        <a class="text-[#d6b36a]"href="index10.html">Login</a>
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <p class="text-center text-xs text-gray-600 mt-6">
+
+                © 2026 The Aurelia. All rights reserved.
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // SHOW / HIDE PASSWORD
+
+        const password = document.getElementById("password");
+        const showPassword = document.getElementById("showPassword");
+
+        showPassword.addEventListener("click", () => {
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                showPassword.innerHTML =
+                    '<i class="fa-solid fa-eye-slash"></i>';
+
+            } else {
+
+                password.type = "password";
+
+                showPassword.innerHTML =
+                    '<i class="fa-solid fa-eye"></i>';
+
+            }
+
+        });
+
+
+        // CREATE ACCOUNT
+
+        const registerForm =
+            document.getElementById("registerForm");
+
+        registerForm.addEventListener("submit", (e) => {
+
+            e.preventDefault();
+
+            const passwordValue =
+                document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            if (passwordValue !== confirmPassword) {
+
+                alert("Passwords do not match!");
+
+                return;
+            }
+
+            alert("Account created successfully!");
+
+            // Login page par redirect
+            window.location.href = "login.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

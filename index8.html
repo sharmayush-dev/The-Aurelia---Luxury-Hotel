@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AURELIA | Contact</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+</head>
+
+
+<body class="bg-[#f7f4ee] text-[#171513]">
+
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <header class="absolute top-0 left-0 w-full z-50">
+
+    <nav class="max-w-7xl mx-auto px-6 lg:px-12 py-6
+                flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="#" class="font-serif text-3xl tracking-wide text-white">
+        AURELIA
+      </a>
+
+
+      <!-- BOOK BUTTON -->
+      <a href="#" class="hidden md:inline-flex items-center gap-3
+                bg-[#b8945f] text-white
+                px-6 py-3 rounded-full
+                hover:bg-white hover:text-[#171513]
+                transition duration-300">
+
+        Book Your Stay
+
+        <span>→</span>
+
+      </a>
+
+
+      <!-- MOBILE -->
+      <button class="md:hidden text-white text-2xl">
+        <i class="fa-solid fa-address-card"></i>
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <section class="relative h-[78vh] min-h-[580px]
+                  flex items-center">
+
+    <!-- LUXURY HOTEL IMAGE -->
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=90"
+      alt="Luxury hotel interior" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="relative z-10
+                max-w-7xl mx-auto
+                px-6 lg:px-12 w-full">
+
+      <div class="max-w-3xl">
+
+        <p class="text-[#d6bc91]
+                  uppercase tracking-[5px]
+                  text-sm mb-5">
+          We Are Here For You
+        </p>
+
+        <h1 class="font-serif text-white
+                   text-6xl md:text-8xl
+                   leading-tight mb-6">
+          Contact Us
+        </h1>
+
+        <p class="text-white/80 text-lg
+                  leading-8 max-w-xl">
+          Whether you are planning a relaxing escape,
+          a special celebration or simply have a question,
+          our team would love to hear from you.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       INTRO
+  ====================================================== -->
+
+  <section class="py-24">
+
+    <div class="max-w-4xl mx-auto
+                px-6 text-center">
+
+      <p class="text-[#b8945f]
+                uppercase tracking-[4px]
+                text-sm mb-5">
+        Get In Touch
+      </p>
+
+      <h2 class="font-serif
+                 text-4xl md:text-6xl
+                 leading-tight mb-6">
+
+        Let's make your stay
+        <span class="italic">unforgettable.</span>
+
+      </h2>
+
+      <p class="text-gray-600
+                leading-8 max-w-2xl mx-auto">
+
+        Our dedicated team is available to assist you
+        with reservations, special requests and anything
+        you need before or during your stay.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CONTACT + FORM
+  ====================================================== -->
+
+  <section class="pb-24">
+
+    <div class="max-w-7xl mx-auto
+                px-6 lg:px-12">
+
+      <div class="grid lg:grid-cols-2
+                  gap-14 items-stretch">
+
+
+        <!-- ================= LEFT IMAGE ================= -->
+
+        <div class="relative
+                    min-h-[650px]
+                    overflow-hidden rounded-[32px]">
+
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=90"
+            alt="Luxury hotel lobby" class="absolute inset-0
+                   w-full h-full
+                   object-cover
+                   hover:scale-105
+                   transition duration-700">
+
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0
+                      bg-gradient-to-t
+                      from-black/80
+                      via-black/20
+                      to-transparent">
+          </div>
+
+
+          <!-- IMAGE CONTENT -->
+          <div class="absolute bottom-0
+                      left-0 right-0 p-8 md:p-10">
+
+            <p class="text-[#d6bc91]
+                      uppercase tracking-[4px]
+                      text-xs mb-3">
+              AURELIA Hotel
+            </p>
+
+            <h3 class="font-serif
+                       text-white text-4xl
+                       leading-tight mb-4">
+
+              Your comfort is
+              <span class="italic">
+                our priority.
+              </span>
+
+            </h3>
+
+            <p class="text-white/70
+                      leading-7 max-w-md">
+              Experience warm hospitality,
+              elegant spaces and personalised
+              service from the moment you arrive.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= RIGHT FORM ================= -->
+
+        <div class="bg-white
+                    rounded-[32px]
+                    p-8 md:p-12
+                    shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+
+          <p class="text-[#b8945f]
+                    uppercase tracking-[4px]
+                    text-sm mb-4">
+            Send A Message
+          </p>
+
+          <h2 class="font-serif
+                     text-4xl md:text-5xl
+                     mb-8">
+            How can we
+            <span class="italic">
+              help?
+            </span>
+          </h2>
+
+
+          <!-- FORM -->
+          <form class="space-y-6">
+
+
+            <!-- NAME -->
+            <div>
+
+              <label class="block text-sm
+                            text-gray-600 mb-2">
+                Full Name
+              </label>
+
+              <input type="text" placeholder="Your name" class="w-full bg-[#f7f4ee]
+                       border border-transparent
+                       px-5 py-4 rounded-xl
+                       outline-none
+                       focus:border-[#b8945f]
+                       transition">
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div>
+
+              <label class="block text-sm
+                            text-gray-600 mb-2">
+                Email Address
+              </label>
+
+              <input type="email" placeholder="you@example.com" class="w-full bg-[#f7f4ee]
+                       border border-transparent
+                       px-5 py-4 rounded-xl
+                       outline-none
+                       focus:border-[#b8945f]
+                       transition">
+
+            </div>
+
+
+            <!-- PHONE -->
+            <div>
+
+              <label class="block text-sm
+                            text-gray-600 mb-2">
+                Phone Number
+              </label>
+
+              <input type="tel" placeholder="+91 98765 43210" class="w-full bg-[#f7f4ee]
+                       border border-transparent
+                       px-5 py-4 rounded-xl
+                       outline-none
+                       focus:border-[#b8945f]
+                       transition">
+
+            </div>
+
+
+            <!-- MESSAGE -->
+            <div>
+
+              <label class="block text-sm
+                            text-gray-600 mb-2">
+                Message
+              </label>
+
+              <textarea rows="5" placeholder="Tell us how we can help..." class="w-full bg-[#f7f4ee]
+                       border border-transparent
+                       px-5 py-4 rounded-xl
+                       outline-none resize-none
+                       focus:border-[#b8945f]
+                       transition"></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button type="submit" class="w-full
+                     bg-[#171513]
+                     text-white
+                     py-4 rounded-full
+                     flex items-center
+                     justify-center gap-4
+                     hover:bg-[#b8945f]
+                     transition duration-300">
+
+              Send Message
+
+              <span>→</span>
+
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CONTACT DETAILS
+  ====================================================== -->
+
+  <section class="bg-[#171513] py-24">
+
+    <div class="max-w-7xl mx-auto
+                px-6 lg:px-12">
+
+
+      <div class="grid md:grid-cols-3
+                  gap-10">
+
+
+        <!-- ADDRESS -->
+        <div class="border-t
+                    border-white/20
+                    pt-7">
+
+          <span class="text-[#d6bc91]
+                       text-sm">
+            01
+          </span>
+
+          <h3 class="font-serif
+                     text-white text-2xl
+                     mt-3 mb-3">
+            Visit Us
+          </h3>
+
+          <p class="text-white/50
+                    leading-7">
+            24 Palace Road,<br>
+            Indore, Madhya Pradesh
+          </p>
+
+        </div>
+
+
+        <!-- PHONE -->
+        <div class="border-t
+                    border-white/20
+                    pt-7">
+
+          <span class="text-[#d6bc91]
+                       text-sm">
+            02
+          </span>
+
+          <h3 class="font-serif
+                     text-white text-2xl
+                     mt-3 mb-3">
+            Call Us
+          </h3>
+
+          <p class="text-white/50
+                    leading-7">
+            +91 98765 43210<br>
+            Available 24 hours
+          </p>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="border-t
+                    border-white/20
+                    pt-7">
+
+          <span class="text-[#d6bc91]
+                       text-sm">
+            03
+          </span>
+
+          <h3 class="font-serif
+                     text-white text-2xl
+                     mt-3 mb-3">
+            Email Us
+          </h3>
+
+          <p class="text-white/50
+                    leading-7">
+            hello@aureliahotel.com<br>
+            We reply within 24 hours
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       MAP / LOCATION IMAGE
+  ====================================================== -->
+
+  <section class="py-24">
+
+    <div class="max-w-7xl mx-auto
+                px-6 lg:px-12">
+
+      <div class="relative
+                  overflow-hidden
+                  rounded-[32px]
+                  h-[500px]">
+
+
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=2000&q=90"
+          alt="Location" class="w-full h-full
+                 object-cover">
+
+
+        <!-- MAP CARD -->
+        <div class="absolute
+                    left-6 bottom-6
+                    md:left-10 md:bottom-10
+                    bg-white
+                    rounded-2xl
+                    p-6 md:p-8
+                    shadow-2xl
+                    max-w-sm">
+
+          <p class="text-[#b8945f]
+                    uppercase tracking-[3px]
+                    text-xs mb-3">
+            Find Us
+          </p>
+
+          <h3 class="font-serif
+                     text-2xl mb-3">
+            AURELIA Hotel
+          </h3>
+
+          <p class="text-gray-500
+                    text-sm leading-6 mb-5">
+            24 Palace Road,<br>
+            Indore, Madhya Pradesh
+          </p>
+
+          <a href="#" class="inline-flex items-center gap-3
+                    text-sm font-medium
+                    text-[#171513]
+                    hover:text-[#b8945f]
+                    transition">
+
+            Get Directions
+
+            <span>→</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FINAL CTA
+  ====================================================== -->
+
+  <section class="relative py-28">
+
+    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=2000&q=90"
+      alt="Luxury hotel room" class="absolute inset-0
+             w-full h-full
+             object-cover">
+
+    <div class="absolute inset-0
+                bg-black/60">
+    </div>
+
+
+    <div class="relative z-10
+                max-w-4xl mx-auto
+                px-6 text-center">
+
+      <p class="text-[#d6bc91]
+                uppercase tracking-[4px]
+                text-sm mb-5">
+        AURELIA
+      </p>
+
+      <h2 class="font-serif
+                 text-white
+                 text-5xl md:text-6xl
+                 leading-tight mb-6">
+
+        We look forward to
+        <span class="italic">
+          welcoming you.
+        </span>
+
+      </h2>
+
+      <p class="text-white/70
+                max-w-xl mx-auto
+                leading-7 mb-8">
+
+        Let us help you create a stay
+        worth remembering.
+
+      </p>
+
+
+      <a href="#" class="inline-flex items-center
+                gap-4 bg-[#b8945f]
+                text-white px-8 py-4
+                rounded-full
+                hover:bg-white
+                hover:text-[#171513]
+                transition duration-300">
+
+        Book Your Stay
+
+        <span>→</span>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="bg-[#11100f] text-white">
+
+    <div class="max-w-7xl mx-auto
+                px-6 lg:px-12 py-16">
+
+
+      <div class="grid md:grid-cols-2
+                  lg:grid-cols-4 gap-12">
+
+
+        <!-- BRAND -->
+        <div>
+
+          <h2 class="font-serif text-3xl mb-5">
+            AURELIA
+          </h2>
+
+          <p class="text-white/50
+                    leading-7 max-w-xs">
+            A timeless luxury hotel where
+            exceptional hospitality meets
+            unforgettable experiences.
+          </p>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                     uppercase tracking-[3px]
+                     text-sm mb-6">
+            Explore
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <a href="#" class="block hover:text-white">
+              Home
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Rooms
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Dining
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Facilities
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                     uppercase tracking-[3px]
+                     text-sm mb-6">
+            Contact
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <p>
+              24 Palace Road,<br>
+              Indore, Madhya Pradesh
+            </p>
+
+            <p>
+              +91 98765 43210
+            </p>
+
+            <p>
+              hello@aureliahotel.com
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- HOURS -->
+        <div>
+
+          <h3 class="text-[#d6bc91]
+                     uppercase tracking-[3px]
+                     text-sm mb-6">
+            Reception
+          </h3>
+
+          <p class="text-white/60 leading-7">
+            Open 24 Hours<br>
+            Every day of the year
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- GOLD LINE -->
+      <div class="h-px
+                  bg-gradient-to-r
+                  from-transparent
+                  via-[#b8945f]
+                  to-transparent
+                  mt-14">
+      </div>
+
+
+      <!-- FOOTER BOTTOM -->
+      <div class="flex flex-col
+                  md:flex-row
+                  justify-between
+                  items-center
+                  gap-4 pt-7
+                  text-sm text-white/40">
+
+        <p>
+          © 2026 AURELIA Hotel.
+          All rights reserved.
+        </p>
+
+        <div class="flex gap-6">
+
+          <a href="#" class="hover:text-white">
+            Privacy Policy
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Terms
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Cookies
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Aurelia - Luxury Hotel</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .serif {
+            font-family: "Playfair Display", serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f7f5ef] text-gray-900">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 text-white transition-all duration-300">
+
+        <nav class="max-w-7xl mx-auto px-5 py-5 flex items-center justify-between">
+
+            <!-- LOGO -->
+            <a href="#home">
+                <h1 class="serif text-xl tracking-wide">
+                    THE AURELIA
+                </h1>
+
+                <p class="text-[8px] tracking-[4px] text-gray-300">
+                    HOTEL & RESORT
+                </p>
+            </a>
+
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden lg:flex items-center gap-7 text-1xs">
+
+                <a href="#home" class="hover:text-[#d6b36a]">
+                    Home
+                </a>
+
+                <a href="index1.html" class="hover:text-[#d6b36a]">
+                    About
+                </a>
+
+                <a href="index2.html" class="hover:text-[#d6b36a]">
+                    Rooms & Suites
+                </a>
+
+                <a href="index3.html" class="hover:text-[#d6b36a]">
+                    Dining
+                </a>
+
+                <a href="index5.html" class="hover:text-[#d6b36a]">
+                    Facilities
+                </a>
+
+                <a href="index6.html" class="hover:text-[#d6b36a]">
+                    Experiences
+                </a>
+
+                <a href="index7.html" class="hover:text-[#d6b36a]">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="flex items-center gap-5">
+
+                <!-- CONTACT -->
+                <a href="index8.html" class="hidden sm:block text-1xs hover:text-[#d6b36a]">
+                    Contact
+                </a>
+
+                <!-- BOOK NOW -->
+                <a href="index12.html"
+                    class="bg-[#d6b36a] text-black px-5 py-2.5 text-xs font-semibold hover:bg-[#c5a25c] transition">
+                    Book Now
+                </a>
+
+                <!-- LOGIN - LEFT -->
+                <a href="index10.html"
+                    class="text-white px-5 py-2.5 text-xl font-semibold flex items-center gap-2 transition hidden lg:flex ">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Login
+                </a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="menuBtn" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <a href="index10.html"><button id="menuBtn" class="lg:hidden text-2xl">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button></a>
+
+
+            </div>
+
+        </nav>
+
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#111517]/95 backdrop-blur-md px-6 pb-7">
+
+            <div class="flex flex-col gap-5 text-sm pt-3">
+
+                <a href="#home" class="mobile-link">
+                    Home
+                </a>
+
+                <a href="index1.html" class="mobile-link">
+                    About
+                </a>
+
+                <a href="index2.html" class="mobile-link">
+                    Rooms & Suites
+                </a>
+
+                <a href="index4.html" class="mobile-link">
+                    Dining
+                </a>
+
+                <a href="index5.html" class="mobile-link">
+                    Facilities
+                </a>
+
+                <a href="index6.html" class="mobile-link">
+                    Experiences
+                </a>
+
+                <a href="index7.html" class="mobile-link">
+                    Gallery
+                </a>
+
+                <a href="index8.html" class="mobile-link">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#111517]/95 backdrop-blur-md px-6 pb-7">
+
+        <div class="flex flex-col gap-5 text-sm pt-3">
+
+            <a href="#home" class="mobile-link">
+                Home
+            </a>
+
+            <a href="index1.html" class="mobile-link">
+                About
+            </a>
+
+            <a href="index2.html" class="mobile-link">
+                Rooms & Suites
+            </a>
+
+            <a href="index4.html" class="mobile-link">
+                Dining
+            </a>
+
+            <a href="index5.html" class="mobile-link">
+                Facilities
+            </a>
+
+            <a href="index6.html" class="mobile-link">
+                Experiences
+            </a>
+
+            <a href="index7.html" class="mobile-link">
+                Gallery
+            </a>
+
+            <a href="index8.html" class="mobile-link">
+                Contact
+            </a>
+
+        </div>
+    </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="relative min-h-[680px] md:min-h-[760px] flex items-center text-white overflow-hidden">
+
+        <!-- VIDEO -->
+
+        <video id="heroVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+
+            <source src="assets/hero.mp4" type="video/mp4">
+
+        </video>
+
+
+        <!-- OVERLAY -->
+
+        <div class="absolute inset-0 bg-black/50"></div>
+
+
+        <!-- CONTENT -->
+
+        <div class="relative max-w-7xl mx-auto w-full px-6 pt-20">
+
+            <div class="max-w-2xl">
+
+                <p class="uppercase tracking-[4px] text-xs mb-5 text-gray-200">
+                    Luxury Hotel & Resort
+                </p>
+
+                <h2 class="serif text-5xl sm:text-6xl md:text-7xl leading-tight">
+                    Stay Somewhere
+                    <br>
+                    Extraordinary.
+                </h2>
+
+                <p class="mt-6 text-sm md:text-base text-gray-200 max-w-lg">
+                    Luxury, comfort and unforgettable experiences
+                    in the heart of the city.
+                </p>
+
+
+                <div class="mt-8 flex flex-wrap gap-3">
+
+                    <a href="index2.html" class="bg-[#d6b36a] text-black px-6 py-3 text-xs font-semibold">
+                        Explore Rooms
+                    </a>
+
+                    <a href="index8.html" class="border border-white px-6 py-3 text-xs hover:bg-white hover:text-black">
+                        Book Your Stay
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VIDEO CONTROL -->
+
+        <button id="videoButton" class="absolute bottom-12 right-8 hidden md:flex items-center gap-3">
+
+            <span id="videoIcon" class="w-12 h-12 border border-white rounded-full flex items-center justify-center">
+                ❚❚
+            </span>
+
+            <span id="videoText" class="text-xs">
+                Pause Video
+            </span>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= BOOKING BAR ================= -->
+
+    <section class="relative -mt-12 z-20 px-4 sm:px-5">
+
+        <div class="max-w-6xl mx-auto bg-[#151a1c] text-white rounded-md shadow-xl overflow-hidden">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+
+                <!-- Check In -->
+                <div class="p-5 border-b sm:border-r lg:border-b-0 border-gray-700">
+                    <p class="text-[9px] text-gray-400 tracking-wider">
+                        CHECK IN
+                    </p>
+
+                    <input type="date" class="mt-2 bg-transparent text-sm text-white outline-none w-full"
+                        value="2026-09-08">
+                </div>
+
+
+                <!-- Check Out -->
+                <div class="p-5 border-b lg:border-b-0 lg:border-r border-gray-700">
+                    <p class="text-[9px] text-gray-400 tracking-wider">
+                        CHECK OUT
+                    </p>
+
+                    <input type="date" class="mt-2 bg-transparent text-sm text-white outline-none w-full"
+                        value="2026-09-09">
+                </div>
+
+
+                <!-- Guests -->
+                <div class="p-5 border-b sm:border-b-0 sm:border-r border-gray-700">
+
+                    <p class="text-[9px] text-gray-400 tracking-wider">
+                        GUESTS
+                    </p>
+
+                    <div class="flex items-center justify-between mt-2">
+
+                        <span class="text-sm">
+                            <span id="guestCount">2</span> Adults
+                        </span>
+
+                        <div class="flex items-center gap-2">
+
+                            <button onclick="changeGuest(-1)"
+                                class="w-7 h-7 rounded-full border border-gray-600 hover:bg-gray-700">
+                                −
+                            </button>
+
+                            <button onclick="changeGuest(1)"
+                                class="w-7 h-7 rounded-full border border-gray-600 hover:bg-gray-700">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Rooms -->
+                <div class="p-5 border-b sm:border-b-0 sm:border-r lg:border-r border-gray-700">
+
+                    <p class="text-[9px] text-gray-400 tracking-wider">
+                        ROOMS
+                    </p>
+
+                    <div class="flex items-center justify-between mt-2">
+
+                        <span class="text-sm">
+                            <span id="roomCount">1</span>
+                            <span id="roomText">Room</span>
+                        </span>
+
+                        <div class="flex items-center gap-2">
+
+                            <button onclick="changeRoom(-1)"
+                                class="w-7 h-7 rounded-full border border-gray-600 hover:bg-gray-700">
+                                −
+                            </button>
+
+                            <button onclick="changeRoom(1)"
+                                class="w-7 h-7 rounded-full border border-gray-600 hover:bg-gray-700">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Button -->
+                <button class="bg-[#d6b36a] text-black font-semibold text-xs p-5
+                       hover:bg-[#c5a25c] transition duration-300
+                       w-full">
+                    <a href="index9.html">Check Availability</a>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        let guests = 2;
+        let rooms = 1;
+
+        function changeGuest(value) {
+
+            guests += value;
+
+            if (guests < 1) {
+                guests = 1;
+            }
+
+            document.getElementById("guestCount").innerText = guests;
+        }
+
+
+        function changeRoom(value) {
+
+            rooms += value;
+
+            if (rooms < 1) {
+                rooms = 1;
+            }
+
+            document.getElementById("roomCount").innerText = rooms;
+
+            document.getElementById("roomText").innerText =
+                rooms === 1 ? "Room" : "Rooms";
+        }
+
+    </script>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+
+            <div>
+
+                <p class="text-[10px] uppercase tracking-[3px] text-gray-500">
+                    About Our Hotel
+                </p>
+
+                <h2 class="serif text-4xl md:text-5xl mt-3">
+                    More Than a Stay
+                </h2>
+
+                <p class="text-gray-600 text-sm leading-7 mt-6">
+                    The Aurelia Grand Hotel & Resort is a place where
+                    refined luxury meets comfort. Our story is built on
+                    a passion for hospitality, excellence and creating
+                    unforgettable experiences for every guest.
+                </p>
+
+
+                <div class="grid sm:grid-cols-2 gap-7 mt-8">
+
+                    <div>
+                        <div class="text-2xl">♨</div>
+
+                        <h3 class="font-semibold text-sm mt-2">
+                            World-Class Amenities
+                        </h3>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                            Premium facilities and services
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <div class="text-2xl">♧</div>
+
+                        <h3 class="font-semibold text-sm mt-2">
+                            Exceptional Hospitality
+                        </h3>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                            Warm, personalised care
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid grid-cols-4 border-t mt-10 pt-6">
+
+                    <div>
+                        <b class="text-xl">120+</b>
+                        <p class="text-[10px] text-gray-500">Rooms</p>
+                    </div>
+
+                    <div>
+                        <b class="text-xl">25+</b>
+                        <p class="text-[10px] text-gray-500">Years</p>
+                    </div>
+
+                    <div>
+                        <b class="text-xl">4</b>
+                        <p class="text-[10px] text-gray-500">Restaurants</p>
+                    </div>
+
+                    <div>
+                        <b class="text-xl">24/7</b>
+                        <p class="text-[10px] text-gray-500">Service</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="relative">
+
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                    class="w-full h-[500px] object-cover" alt="Hotel">
+
+                <div class="absolute bottom-6 left-6 bg-black/60 text-white p-5">
+
+                    <p class="serif text-xl">
+                        A Place of
+                    </p>
+
+                    <p class="serif text-2xl">
+                        Timeless Elegance
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ROOMS ================= -->
+
+    <section id="rooms" class="bg-[#151a1c] text-white py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] tracking-[3px] text-gray-400 uppercase">
+                Rooms & Suites
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                Luxury Rooms & Suites
+            </h2>
+
+            <p class="text-sm text-gray-400 mt-3">
+                Elegantly designed rooms with modern amenities.
+            </p>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-10">
+
+
+                <!-- CARD 1 -->
+
+                <div class="bg-white text-black rounded overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=80"
+                        class="h-44 w-full object-cover">
+
+                    <div class="p-4">
+
+                        <h3 class="serif text-lg">
+                            Deluxe Room
+                        </h3>
+
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Elegant room with modern amenities.
+                        </p>
+
+                        <div class="flex justify-between text-[10px] mt-4">
+                            <span>2 Guests</span>
+                            <span>1 Bed</span>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-5">
+
+                            <b>₹ 6,999</b>
+
+                            <button class="bg-[#d6b36a] px-3 py-2 text-[9px]">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="bg-white text-black rounded overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80"
+                        class="h-44 w-full object-cover">
+
+                    <div class="p-4">
+
+                        <h3 class="serif text-lg">
+                            Premium Room
+                        </h3>
+
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Spacious room with premium comfort.
+                        </p>
+
+                        <div class="flex justify-between text-[10px] mt-4">
+                            <span>2 Guests</span>
+                            <span>1 Bed</span>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-5">
+
+                            <b>₹ 8,999</b>
+
+                            <button class="bg-[#d6b36a] px-3 py-2 text-[9px]">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="bg-white text-black rounded overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80"
+                        class="h-44 w-full object-cover">
+
+                    <div class="p-4">
+
+                        <h3 class="serif text-lg">
+                            Executive Suite
+                        </h3>
+
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Luxury suite with living space.
+                        </p>
+
+                        <div class="flex justify-between text-[10px] mt-4">
+                            <span>3 Guests</span>
+                            <span>1 Bed</span>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-5">
+
+                            <b>₹ 12,999</b>
+
+                            <button class="bg-[#d6b36a] px-3 py-2 text-[9px]">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+
+                <div class="bg-white text-black rounded overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=700&q=80"
+                        class="h-44 w-full object-cover">
+
+                    <div class="p-4">
+
+                        <h3 class="serif text-lg">
+                            Luxury Suite
+                        </h3>
+
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Elegant suite with beautiful views.
+                        </p>
+
+                        <div class="flex justify-between text-[10px] mt-4">
+                            <span>3 Guests</span>
+                            <span>2 Beds</span>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-5">
+
+                            <b>₹ 15,999</b>
+
+                            <button class="bg-[#d6b36a] px-3 py-2 text-[9px]">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 5 -->
+
+                <div class="bg-white text-black rounded overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=700&q=80"
+                        class="h-44 w-full object-cover">
+
+                    <div class="p-4">
+
+                        <h3 class="serif text-lg">
+                            Presidential Suite
+                        </h3>
+
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Our most luxurious private suite.
+                        </p>
+
+                        <div class="flex justify-between text-[10px] mt-4">
+                            <span>4 Guests</span>
+                            <span>2 Beds</span>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-5">
+
+                            <b>₹ 29,999</b>
+
+                            <button class="bg-[#d6b36a] px-3 py-2 text-[9px]">
+                                Book Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button
+                class="text-bold bg-[white] text-black px-5 py-3 text-2xs hover:bg-[#d6b36a] hover:text-black transition mt-10 ml-50">
+                <a href="/index9.html"> LEARN MORE ▶</a>
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FACILITIES ================= -->
+
+    <section id="facilities" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-500">
+                Our Facilities
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                World-Class Amenities
+            </h2>
+
+
+            <div class="grid lg:grid-cols-2 gap-10 mt-10">
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+
+                    <div class="border p-5">
+                        <div class="text-2xl">🏊</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Swimming Pool
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Relax & Refresh
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">🏋</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Fitness Center
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Stay Active
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">♨</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Spa & Wellness
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Relax & Rejuvenate
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">📶</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Free Wi-Fi
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Stay Connected
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">🚗</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Parking
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Secure Parking
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">💼</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Conference
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Business Meetings
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">🍽</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Restaurant
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Fine Dining
+                        </p>
+                    </div>
+
+                    <div class="border p-5">
+                        <div class="text-2xl">🛎</div>
+                        <h3 class="font-semibold text-sm mt-3">
+                            Concierge
+                        </h3>
+                        <p class="text-[10px] text-gray-500 mt-2">
+                            Personal Assistance
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85"
+                    class="w-full h-[430px] object-cover" alt="Swimming pool">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="relative min-h-[450px] flex items-center text-white">
+
+        <img src="https://www.thetimes.com/imageserver/image/2c2faa7c-d137-4e5f-b447-51fdb3f07370.jpg?strip=all&format=webp&crop=2999px%2C1687px%2C0px%2C0px&resize=2360"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+            <p class="uppercase tracking-[3px] text-xs text-gray-300">
+                Experience the Hotel
+            </p>
+
+            <h2 class="serif text-4xl md:text-6xl mt-3">
+                Experience Luxury
+            </h2>
+
+            <p class="max-w-lg text-sm text-gray-300 mt-4 leading-7">
+                Every detail is designed for your comfort,
+                relaxation and unforgettable moments.
+            </p>
+
+            
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DINING ================= -->
+
+    <section id="dining" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-500">
+                Dining
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                Discover Flavours Worth Remembering
+            </h2>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+
+                <div>
+
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+                        class="h-52 w-full object-cover">
+
+                    <h3 class="serif text-lg mt-3">
+                        Fine Dining
+                    </h3>
+
+                    <p class="text-xs text-gray-500">
+                        Elegant culinary experiences
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+                        class="h-52 w-full object-cover">
+
+                    <h3 class="serif text-lg mt-3">
+                        Rooftop Restaurant
+                    </h3>
+
+                    <p class="text-xs text-gray-500">
+                        Dinner with a view
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+                        class="h-52 w-full object-cover">
+
+                    <h3 class="serif text-lg mt-3">
+                        Aurelia Cafe
+                    </h3>
+
+                    <p class="text-xs text-gray-500">
+                        Coffee & desserts
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=700&q=80"
+                        class="h-52 w-full object-cover">
+
+                    <h3 class="serif text-lg mt-3">
+                        Bar & Lounge
+                    </h3>
+
+                    <p class="text-xs text-gray-500">
+                        Relaxed evenings
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EXPERIENCES ================= -->
+
+    <section class="bg-[#151a1c] text-white py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-400">
+                Experiences
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                Create Unforgettable Moments
+            </h2>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+
+
+                <div class="relative h-72 overflow-hidden group">
+
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/ef/4c/9c.jpg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <h3 class="serif text-xl">
+                            City Tours
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            Explore the city
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="relative h-72 overflow-hidden group">
+
+                    <img src="https://img.magnific.com/free-photo/woman-relaxing-spa_329181-13152.jpg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <h3 class="serif text-xl">
+                            Spa Experience
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            Relax & rejuvenate
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="relative h-72 overflow-hidden group">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvNbQK_0dmJigWLz2irZmNTrN_6B_4wDUUwzn5d81hQu5lLCCpkI6VXhH&s=10"
+                        class="w-full h-full object-cover group-hover:scale-110 transition">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <h3 class="serif text-xl">
+                            Poolside Escape
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            Unwind by the pool
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="relative h-72 overflow-hidden group">
+
+                    <img src="https://img.magnific.com/premium-photo/elegant-gourmet-dish-served-white-plate-with-delicate-garnishes-fine-dining-restaurant-intimate-evening-setting_349938-13048.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5">
+                        <h3 class="serif text-xl">
+                            Fine Dining
+                        </h3>
+                        <p class="text-xs text-gray-300">
+                            Taste something special
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-500">
+                Gallery
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                A Glimpse of Luxury
+            </h2>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80"
+                    class="h-60 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=700&q=80"
+                    class="h-60 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=700&q=80"
+                    class="h-60 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80"
+                    class="h-60 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=700&q=80"
+                    class="h-40 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1582610116397-edb318620f90?auto=format&fit=crop&w=700&q=80"
+                    class="h-40 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1541123603104-512919d6a96c?auto=format&fit=crop&w=700&q=80"
+                    class="h-40 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
+                    class="h-40 w-full object-cover">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="bg-[#151a1c] text-white py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-400">
+                What Our Guests Say
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                Guest Reviews
+            </h2>
+
+
+            <div class="grid md:grid-cols-3 gap-5 mt-10">
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        Sarah Johnson
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        Everything from the room to the service
+                        was exceptional. A truly unforgettable stay.
+                    </p>
+
+                </div>
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        Michael Chen
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        Beautiful hotel and excellent hospitality.
+                        I would definitely stay here again.
+                    </p>
+
+                </div>
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        Emily Davis
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        A perfect place to relax and enjoy
+                        a peaceful luxury experience.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="grid md:grid-cols-3 gap-5 mt-10">
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        James Wilson
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        The perfect place for a relaxing getaway. Everything was thoughtfully designed, and the staff
+                        were friendly and professional throughout our stay.
+                    </p>
+
+                </div>
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        Sophia Martinez
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        “I loved every moment at The Aurelia. The atmosphere was elegant, the room was spotless, and the
+                        dining experience was exceptional.
+                    </p>
+
+                </div>
+
+
+                <div class="border border-gray-700 p-6">
+
+                    <h3 class="font-semibold">
+                        Daniel Brown
+                    </h3>
+
+                    <p class="text-yellow-400 mt-3">
+                        4.9 ★★★★★
+                    </p>
+
+                    <p class="text-sm text-gray-300 mt-4 leading-6">
+                        One of the best hotel experiences I’ve had. Excellent.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PACKAGES ================= -->
+
+    <section class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <p class="text-[10px] uppercase tracking-[3px] text-gray-500">
+                Special Offers
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl mt-2">
+                Exclusive Packages
+            </h2>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-10">
+
+                <div class="border p-5">
+                    <p class="text-xs text-gray-500">
+                        Weekend Escape
+                    </p>
+                    <h3 class="serif text-2xl mt-2">
+                        20% OFF
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-3">
+                        Perfect weekend getaway.
+                    </p>
+                    <button class="bg-[#d6b36a] w-full py-2 mt-6 text-xs">
+                        Book Now
+                    </button>
+                </div>
+
+
+                <div class="border p-5">
+                    <p class="text-xs text-gray-500">
+                        Romantic Getaway
+                    </p>
+                    <h3 class="serif text-2xl mt-2">
+                        25% OFF
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-3">
+                        A special experience for two.
+                    </p>
+                    <button class="bg-[#d6b36a] w-full py-2 mt-6 text-xs">
+                        Book Now
+                    </button>
+                </div>
+
+
+                <div class="border p-5">
+                    <p class="text-xs text-gray-500">
+                        Family Package
+                    </p>
+                    <h3 class="serif text-2xl mt-2">
+                        30% OFF
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-3">
+                        Fun for the whole family.
+                    </p>
+                    <button class="bg-[#d6b36a] w-full py-2 mt-6 text-xs">
+                        Book Now
+                    </button>
+                </div>
+
+
+                <div class="border p-5">
+                    <p class="text-xs text-gray-500">
+                        Business Stay
+                    </p>
+                    <h3 class="serif text-2xl mt-2">
+                        15% OFF
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-3">
+                        Designed for business travel.
+                    </p>
+                    <button class="bg-[#d6b36a] w-full py-2 mt-6 text-xs">
+                        Book Now
+                    </button>
+                </div>
+
+
+                <div class="border p-5">
+                    <p class="text-xs text-gray-500">
+                        Long Stay
+                    </p>
+                    <h3 class="serif text-2xl mt-2">
+                        35% OFF
+                    </h3>
+                    <p class="text-xs text-gray-500 mt-3">
+                        Stay longer and save more.
+                    </p>
+                    <button class="bg-[#d6b36a] w-full py-2 mt-6 text-xs">
+                        Book Now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="relative py-24 text-white">
+
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="max-w-xl">
+
+                <p class="text-[10px] uppercase tracking-[3px] text-gray-300">
+                    Get in Touch
+                </p>
+
+                <h2 class="serif text-4xl md:text-5xl mt-2">
+                    Your Stay Begins Here
+                </h2>
+
+                <p class="text-sm text-gray-300 mt-4">
+                    Reserve your room and experience comfort,
+                    elegance and exceptional hospitality.
+                </p>
+
+
+                <form id="contactForm" class="grid md:grid-cols-2 gap-3 mt-8">
+
+                    <input type="text" placeholder="Your Name" required
+                        class="bg-white/10 border border-white/30 px-4 py-3 outline-none">
+
+                    <input type="email" placeholder="Your Email" required
+                        class="bg-white/10 border border-white/30 px-4 py-3 outline-none">
+
+                    <input type="text" placeholder="Check In"
+                        class="bg-white/10 border border-white/30 px-4 py-3 outline-none">
+
+                    <input type="text" placeholder="Check Out"
+                        class="bg-white/10 border border-white/30 px-4 py-3 outline-none">
+
+                    <textarea placeholder="Message"
+                        class="bg-white/10 border border-white/30 px-4 py-3 outline-none md:col-span-2 h-28"></textarea>
+
+                    <button type="submit" class="bg-[#d6b36a] text-black py-3 text-xs font-semibold md:col-span-2">
+                        Send Enquiry
+                    </button>
+
+                </form>
+
+
+                <p id="formMessage" class="hidden text-[#d6b36a] text-sm mt-4">
+                    Thank you! Your enquiry has been received.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-[#111517] text-white py-16">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+
+                <div>
+
+                    <h2 class="serif text-2xl">
+                        THE AURELIA
+                    </h2>
+
+                    <p class="text-[9px] tracking-[4px] text-gray-500">
+                        HOTEL & RESORT
+                    </p>
+
+                    <p class="text-sm text-gray-400 mt-5 leading-6">
+                        Luxury hospitality, exceptional comfort
+                        and unforgettable experiences.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="serif text-lg">
+                        Quick Links
+                    </h3>
+
+                    <div class="space-y-3 mt-5 text-xs text-gray-400">
+
+                        <a href="#home" class="block">
+                            Home
+                        </a>
+
+                        <a href="#about" class="block">
+                            About
+                        </a>
+
+                        <a href="#rooms" class="block">
+                            Rooms
+                        </a>
+
+                        <a href="#dining" class="block">
+                            Dining
+                        </a>
+
+                        <a href="#gallery" class="block">
+                            Gallery
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="serif text-lg">
+                        Contact
+                    </h3>
+
+                    <div class="space-y-3 mt-5 text-xs text-gray-400">
+
+                        <p>
+                            Vijay Nagar (Indore), India
+                        </p>
+
+                        <p>
+                            +91 63971 65594
+                        </p>
+
+                        <p>
+                            ayushsharma1523@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="serif text-lg">
+                        Newsletter
+                    </h3>
+
+                    <p class="text-xs text-gray-400 mt-5">
+                        Subscribe for special offers.
+                    </p>
+
+                    <form id="newsletter" class="flex mt-4">
+
+                        <input type="email" required placeholder="Your email"
+                            class="bg-white/10 px-4 py-3 text-xs w-full outline-none">
+
+                        <button class="bg-[#d6b36a] text-black px-5">
+                            →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-gray-800 mt-12 pt-6">
+
+                <p class="text-[10px] text-gray-500">
+                    © 2026 The Aurelia Grand Hotel & Resort.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        // MOBILE MENU
+
+        const menuBtn = document.getElementById("menuBtn");
+
+        const mobileMenu = document.getElementById("mobileMenu");
+
+
+        menuBtn.addEventListener("click", function () {
+
+            mobileMenu.classList.toggle("hidden");
+
+            if (mobileMenu.classList.contains("hidden")) {
+
+                menuBtn.innerHTML = "☰";
+
+            } else {
+
+                menuBtn.innerHTML = "✕";
+
+            }
+
+        });
+
+
+
+        // MOBILE MENU CLOSE
+
+        const mobileLinks =
+            document.querySelectorAll(".mobile-link");
+
+
+        mobileLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                mobileMenu.classList.add("hidden");
+
+                menuBtn.innerHTML = "☰";
+
+            });
+
+        });
+
+
+
+        // NAVBAR SCROLL
+
+        const navbar = document.getElementById("navbar");
+
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 60) {
+
+                navbar.classList.add(
+                    "bg-[#111517]/95",
+                    "backdrop-blur-md",
+                    "shadow-lg"
+                );
+
+            } else {
+
+                navbar.classList.remove(
+                    "bg-[#111517]/95",
+                    "backdrop-blur-md",
+                    "shadow-lg"
+                );
+
+            }
+
+        });
+
+
+
+        // HERO VIDEO PLAY / PAUSE
+
+        const heroVideo =
+            document.getElementById("heroVideo");
+
+        const videoButton =
+            document.getElementById("videoButton");
+
+        const videoIcon =
+            document.getElementById("videoIcon");
+
+        const videoText =
+            document.getElementById("videoText");
+
+
+        videoButton.addEventListener("click", function () {
+
+            if (heroVideo.paused) {
+
+                heroVideo.play();
+
+                videoIcon.innerHTML = "❚❚";
+
+                videoText.innerHTML = "Pause Video";
+
+            } else {
+
+                heroVideo.pause();
+
+                videoIcon.innerHTML = "▶";
+
+                videoText.innerHTML = "Play Video";
+
+            }
+
+        });
+
+
+
+        // CONTACT FORM
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+
+        contactForm.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            formMessage.classList.remove("hidden");
+
+            contactForm.reset();
+
+        });
+
+
+
+        // NEWSLETTER
+
+        const newsletter =
+            document.getElementById("newsletter");
+
+
+        newsletter.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            alert("Thank you for subscribing!");
+
+            newsletter.reset();
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

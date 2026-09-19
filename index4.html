@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AURELIA | Menu</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+</head>
+
+
+<body class="bg-[#f7f4ee] text-[#171513]">
+
+
+  <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+  <header class="bg-[#171513] text-white">
+
+    <nav class="max-w-7xl mx-auto px-6 lg:px-12 py-6
+              flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="#" class="font-serif text-3xl tracking-wide">
+        AURELIA
+      </a>
+
+
+      <!-- BUTTON -->
+      <a href="#" class="hidden md:inline-flex items-center gap-3
+              bg-[#b8945f] px-6 py-3 rounded-full
+              hover:bg-white hover:text-[#171513]
+              transition">
+
+        Book a Table
+
+        <span>→</span>
+
+      </a>
+
+
+      <!-- MOBILE -->
+      <button class="md:hidden text-2xl">
+        <i class="fa-solid fa-utensils"></i>
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+     HERO
+===================================================== -->
+
+  <section class="relative h-[65vh] min-h-[500px]
+                flex items-center">
+
+    <!-- IMAGE -->
+    <img src="https://d17lca4jrfslmn.cloudfront.net/general/Breakfast/Website-Image-GALLERY-SIZE-8.png"
+      alt="AURELIA Restaurant" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+
+    <!-- CONTENT -->
+    <div class="relative z-10 max-w-7xl mx-auto
+              px-6 lg:px-12 w-full">
+
+      <div class="max-w-3xl">
+
+        <p class="text-[#d6bc91] uppercase
+                tracking-[5px] text-sm mb-5">
+          AURELIA Dining
+        </p>
+
+        <h1 class="font-serif text-white
+                 text-6xl md:text-8xl leading-tight mb-6">
+          Our Menu
+        </h1>
+
+        <p class="text-white/80 text-lg
+                leading-8 max-w-xl">
+          A collection of carefully crafted dishes,
+          made with fresh ingredients and served
+          with timeless elegance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     INTRO
+===================================================== -->
+
+  <section class="py-20 bg-[#f7f4ee]">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <p class="text-[#b8945f] uppercase
+              tracking-[4px] text-sm mb-5">
+        Taste The Extraordinary
+      </p>
+
+      <h2 class="font-serif text-4xl md:text-5xl
+               leading-tight mb-6">
+
+        Simple ingredients.
+        <span class="italic">Exceptional flavours.</span>
+
+      </h2>
+
+      <p class="text-gray-600 leading-8 max-w-2xl mx-auto">
+
+        Our kitchen celebrates fresh seasonal ingredients,
+        classic techniques and modern creativity. Every dish
+        is prepared with care to make your dining experience
+        truly memorable.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     MENU
+===================================================== -->
+
+  <section class="pb-24 bg-[#f7f4ee]">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+      <!-- ================= BREAKFAST ================= -->
+
+      <div class="mb-20">
+
+        <div class="text-center mb-12">
+
+          <p class="text-[#b8945f] uppercase
+                  tracking-[4px] text-sm mb-3">
+            01
+          </p>
+
+          <h2 class="font-serif text-4xl">
+            Breakfast
+          </h2>
+
+          <p class="text-gray-500 mt-3">
+            Served daily from 7:00 AM – 11:00 AM
+          </p>
+
+        </div>
+
+
+        <div class="space-y-6">
+
+
+          <!-- ITEM -->
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Classic English Breakfast
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Eggs, grilled vegetables, toast & roasted potatoes
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f] font-medium">
+              ₹550
+            </span>
+
+          </div>
+
+
+          <!-- ITEM -->
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Avocado Toast
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Sourdough, avocado, cherry tomatoes & herbs
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f] font-medium">
+              ₹420
+            </span>
+
+          </div>
+
+
+          <!-- ITEM -->
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Fresh Fruit & Granola
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Seasonal fruits, yogurt & homemade granola
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f] font-medium">
+              ₹360
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= STARTERS ================= -->
+
+      <div class="mb-20">
+
+        <div class="text-center mb-12">
+
+          <p class="text-[#b8945f] uppercase
+                  tracking-[4px] text-sm mb-3">
+            02
+          </p>
+
+          <h2 class="font-serif text-4xl">
+            Starters
+          </h2>
+
+        </div>
+
+
+        <div class="space-y-6">
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Truffle Mushroom Soup
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Creamy wild mushroom soup with truffle oil
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹420
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Burrata & Tomato
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Fresh burrata, tomatoes, basil & olive oil
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹580
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Classic Caesar Salad
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Crisp lettuce, parmesan & Caesar dressing
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹380
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= MAIN COURSE ================= -->
+
+      <div class="mb-20">
+
+        <div class="text-center mb-12">
+
+          <p class="text-[#b8945f] uppercase
+                  tracking-[4px] text-sm mb-3">
+            03
+          </p>
+
+          <h2 class="font-serif text-4xl">
+            Main Course
+          </h2>
+
+        </div>
+
+
+        <div class="space-y-6">
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Grilled Chicken Steak
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Grilled chicken, seasonal vegetables & herb sauce
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹780
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Creamy Alfredo Pasta
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Homemade pasta, parmesan & creamy sauce
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹620
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Vegetable Risotto
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Seasonal vegetables, herbs & parmesan
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹560
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Paneer Tikka
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Charcoal grilled paneer with aromatic spices
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹520
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= DESSERTS ================= -->
+
+      <div class="mb-20">
+
+        <div class="text-center mb-12">
+
+          <p class="text-[#b8945f] uppercase
+                  tracking-[4px] text-sm mb-3">
+            04
+          </p>
+
+          <h2 class="font-serif text-4xl">
+            Desserts
+          </h2>
+
+        </div>
+
+
+        <div class="space-y-6">
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Chocolate Fondant
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Warm chocolate cake with vanilla ice cream
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹420
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Classic Tiramisu
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Mascarpone, coffee, cocoa & sponge
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹390
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                New York Cheesecake
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Creamy cheesecake with seasonal berries
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹450
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ================= DRINKS ================= -->
+
+      <div>
+
+        <div class="text-center mb-12">
+
+          <p class="text-[#b8945f] uppercase
+                  tracking-[4px] text-sm mb-3">
+            05
+          </p>
+
+          <h2 class="font-serif text-4xl">
+            Drinks
+          </h2>
+
+        </div>
+
+
+        <div class="space-y-6">
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Classic Cappuccino
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Espresso, steamed milk & soft foam
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹240
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Fresh Lime Cooler
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Fresh lime, mint & sparkling water
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹220
+            </span>
+
+          </div>
+
+
+          <div class="flex justify-between gap-6
+                    border-b border-gray-300 pb-5">
+
+            <div>
+
+              <h3 class="font-serif text-xl">
+                Fresh Orange Juice
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Freshly squeezed seasonal oranges
+              </p>
+
+            </div>
+
+            <span class="text-[#b8945f]">
+              ₹280
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     RESERVATION CTA
+===================================================== -->
+
+  <section class="bg-[#171513] py-24">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <p class="text-[#d6bc91] uppercase
+              tracking-[4px] text-sm mb-5">
+        AURELIA Dining
+      </p>
+
+      <h2 class="font-serif text-white
+               text-5xl md:text-6xl mb-6">
+
+        Make your evening
+        <span class="italic">special.</span>
+
+      </h2>
+
+      <p class="text-white/60 leading-7 max-w-xl mx-auto mb-8">
+
+        Reserve your table and enjoy an unforgettable
+        dining experience at AURELIA.
+
+      </p>
+
+      <a href="#" class="inline-flex items-center gap-4
+              bg-[#b8945f] text-white
+              px-8 py-4 rounded-full
+              hover:bg-white hover:text-[#171513]
+              transition duration-300">
+
+        Reserve a Table
+
+        <span>→</span>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+  <footer class="bg-[#11100f] text-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+
+      <div class="grid md:grid-cols-2
+                lg:grid-cols-4 gap-12">
+
+
+        <!-- BRAND -->
+        <div>
+
+          <h2 class="font-serif text-3xl mb-5">
+            AURELIA
+          </h2>
+
+          <p class="text-white/50 leading-7 max-w-xs">
+
+            A timeless luxury hotel where exceptional
+            hospitality meets unforgettable experiences.
+
+          </p>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+        <div>
+
+          <h3 class="text-[#d6bc91] uppercase
+                   tracking-[3px] text-sm mb-6">
+            Explore
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <a href="#" class="block hover:text-white">
+              Home
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Rooms
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Dining
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              About
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- HOURS -->
+        <div>
+
+          <h3 class="text-[#d6bc91] uppercase
+                   tracking-[3px] text-sm mb-6">
+            Dining Hours
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <p>
+              Breakfast<br>
+              <span class="text-white">
+                7:00 AM – 11:00 AM
+              </span>
+            </p>
+
+            <p>
+              Lunch<br>
+              <span class="text-white">
+                12:30 PM – 3:30 PM
+              </span>
+            </p>
+
+            <p>
+              Dinner<br>
+              <span class="text-white">
+                7:00 PM – 11:30 PM
+              </span>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div>
+
+          <h3 class="text-[#d6bc91] uppercase
+                   tracking-[3px] text-sm mb-6">
+            Contact
+          </h3>
+
+          <div class="space-y-4 text-white/60">
+
+            <p>
+              24 Palace Road,<br>
+              Indore, Madhya Pradesh
+            </p>
+
+            <p>
+              +91 63971 65594
+            </p>
+
+            <p>
+              ayushsharma@gmail.com
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LINE -->
+      <div class="h-px bg-gradient-to-r
+                from-transparent via-[#b8945f]
+                to-transparent mt-14">
+      </div>
+
+
+      <!-- BOTTOM -->
+      <div class="flex flex-col md:flex-row
+                justify-between items-center
+                gap-4 pt-7
+                text-sm text-white/40">
+
+        <p>
+          © 2026 AURELIA Hotel. All rights reserved.
+        </p>
+
+        <div class="flex gap-6">
+
+          <a href="#" class="hover:text-white">
+            Privacy
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Terms
+          </a>
+
+          <a href="#" class="hover:text-white">
+            Cookies
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

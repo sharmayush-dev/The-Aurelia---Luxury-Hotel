@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Aurelia | Dining</title>
+</head>
+
+<body class="bg-[#f8f7f4] text-[#222]">
+
+
+    <!-- =================================================
+                         NAVBAR
+    ================================================= -->
+
+    <nav class="px-6 md:px-12 py-6 bg-[#f8f7f4]">
+
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+
+            <a href="#" class="group">
+
+                <h1 class="font-serif text-2xl md:text-3xl
+                           tracking-[5px]">
+                    AURELIA
+                </h1>
+
+                <p class="text-[8px] tracking-[4px]
+                          text-[#b8945f] text-center mt-1">
+                    HOTEL & DINING
+                </p>
+
+            </a>
+
+
+            <!-- Book Button -->
+
+            <button class="group flex items-center gap-2
+                       bg-[#b8945f] text-white
+                       px-6 py-3 rounded-full
+                       text-sm
+                       transition duration-300
+                       hover:bg-[#9f7b4b]
+                       hover:shadow-lg hidden sm:block">
+
+                Book table
+
+                <span class="transition-transform
+                             group-hover:translate-x-1">
+                    →
+                </span>
+
+                <button class=" text-black px-6 py-3 text-3xl transition lg:hidden">
+                    <i class="fa-solid fa-table-cells-row-lock"></i>
+                </button>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =================================================
+                         HERO SECTION
+    ================================================= -->
+
+    <section class="max-w-7xl mx-auto px-5 md:px-12 py-8">
+
+        <div class="relative overflow-hidden rounded-2xl">
+
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=90"
+                class="w-full h-[550px] md:h-[650px]
+                       object-cover" alt="Luxury Restaurant">
+
+
+            <!-- Overlay -->
+
+            <div class="absolute inset-0
+                        bg-black/50
+                        flex items-center justify-center
+                        text-center px-6">
+
+                <div class="text-white max-w-4xl">
+
+                    <p class="uppercase tracking-[7px]
+                              text-xs md:text-sm
+                              text-[#d6bc91]">
+                        Dining at Aurelia
+                    </p>
+
+
+                    <h2 class="font-serif
+                               text-5xl md:text-7xl
+                               leading-tight mt-6">
+
+                        Taste the
+                        <span class="italic text-[#d6bc91]">
+                            extraordinary.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="max-w-2xl mx-auto
+                              text-gray-200
+                              leading-7 mt-6">
+
+                        Discover exceptional cuisine, elegant surroundings
+                        and unforgettable dining experiences crafted with
+                        passion and served with care.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                         INTRO
+    ================================================= -->
+
+    <section class="max-w-4xl mx-auto
+                    text-center
+                    px-6 py-24">
+
+        <p class="uppercase tracking-[5px]
+                  text-xs text-[#b8945f]">
+            Our Kitchen
+        </p>
+
+
+        <h2 class="font-serif
+                   text-4xl md:text-6xl
+                   mt-5">
+
+            Food made with passion.
+
+        </h2>
+
+
+        <p class="text-gray-600
+                  leading-8 mt-7">
+
+            Our chefs bring together fresh ingredients, creative techniques
+            and timeless recipes to create dishes that are full of flavour.
+            Every plate is carefully prepared to give our guests an
+            exceptional dining experience.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+                    RESTAURANT SECTION
+    ================================================= -->
+
+    <section class="bg-white py-24">
+
+        <div class="max-w-7xl mx-auto
+                    px-6 md:px-12">
+
+            <div class="grid lg:grid-cols-2
+                        gap-14 items-center">
+
+
+                <!-- Image -->
+
+                <div class="relative">
+
+                    <img src="https://img.magnific.com/free-photo/breakfast-set-with-various-food-table_140725-3334.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="w-full h-[520px]
+                               object-cover rounded-xl" alt="Restaurant Interior">
+
+
+                    <div class="absolute
+                                bottom-5 left-5
+                                bg-white/90
+                                backdrop-blur
+                                px-6 py-4
+                                rounded-lg">
+
+                        <p class="text-[10px]
+                                  uppercase
+                                  tracking-[3px]
+                                  text-gray-500">
+                            Open Daily
+                        </p>
+
+                        <p class="font-serif
+                                  text-xl mt-1">
+                            7 AM — 11 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Content -->
+
+                <div>
+
+                    <p class="uppercase
+                              tracking-[5px]
+                              text-xs
+                              text-[#b8945f]">
+                        The Restaurant
+                    </p>
+
+
+                    <h2 class="font-serif
+                               text-4xl md:text-5xl
+                               mt-5 leading-tight">
+
+                        The Aurelia
+                        <br>
+                        Dining Room
+
+                    </h2>
+
+
+                    <p class="text-gray-600
+                              leading-7 mt-7">
+
+                        Step into a warm and elegant dining space where
+                        modern design meets timeless hospitality. Our
+                        restaurant is the perfect place for breakfast,
+                        lunch, dinner and special celebrations.
+
+                    </p>
+
+
+                    <p class="text-gray-600
+                              leading-7 mt-5">
+
+                        From intimate dinners to memorable gatherings,
+                        every detail is designed to make your evening
+                        comfortable, beautiful and unforgettable.
+
+                    </p>
+
+
+                    <!-- Timings -->
+
+                    <div class="grid grid-cols-2
+                                gap-6 mt-8
+                                border-y
+                                border-gray-200
+                                py-6">
+
+                        <div>
+
+                            <p class="text-xs
+                                      uppercase
+                                      tracking-widest
+                                      text-gray-400">
+                                Breakfast
+                            </p>
+
+                            <p class="font-medium mt-2">
+                                7:00 AM – 10:30 AM
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-xs
+                                      uppercase
+                                      tracking-widest
+                                      text-gray-400">
+                                Dinner
+                            </p>
+
+                            <p class="font-medium mt-2">
+                                7:00 PM – 11:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Button -->
+
+                    <button class="group mt-8
+                               flex items-center gap-3
+                               border border-[#b8945f]
+                               text-[#8d6b3d]
+                               px-7 py-3
+                               rounded-full
+                               transition duration-300
+                               hover:bg-[#b8945f]
+                               hover:text-white">
+
+                        Reserve a Table
+
+                        <span class="transition-transform
+                                     group-hover:translate-x-1">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                    SIGNATURE DISHES
+    ================================================= -->
+
+    <section class="max-w-7xl mx-auto
+                    px-6 md:px-12
+                    py-24">
+
+
+        <div class="text-center mb-14">
+
+            <p class="uppercase
+                      tracking-[5px]
+                      text-xs
+                      text-[#b8945f]">
+                From Our Menu
+            </p>
+
+
+            <h2 class="font-serif
+                       text-4xl md:text-6xl
+                       mt-5">
+                Signature dishes
+            </h2>
+
+
+            <p class="max-w-2xl mx-auto
+                      text-gray-500
+                      mt-5 leading-7">
+
+                A selection of our favourite dishes, prepared with
+                carefully selected ingredients.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Food Grid -->
+
+        <div class="grid sm:grid-cols-2
+                    lg:grid-cols-3
+                    gap-7">
+
+
+            <!-- Dish 1 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm
+                        hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72
+                               object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Garden Salad">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between gap-4">
+
+                        <h3 class="font-serif
+                                   text-2xl">
+                            Garden Salad
+                        </h3>
+
+                        <span class="text-[#b8945f]
+                                     font-medium">
+                            ₹450
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500
+                              text-sm leading-6 mt-3">
+                        Fresh seasonal vegetables with our
+                        signature house dressing.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dish 2 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm
+                        hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72 object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Grilled Steak">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between gap-4">
+
+                        <h3 class="font-serif text-2xl">
+                            Grilled Steak
+                        </h3>
+
+                        <span class="text-[#b8945f] font-medium">
+                            ₹1,250
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm
+                              leading-6 mt-3">
+                        Tender grilled steak served with
+                        seasonal vegetables.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dish 3 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72 object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Truffle Pasta">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="font-serif text-2xl">
+                            Truffle Pasta
+                        </h3>
+
+                        <span class="text-[#b8945f] font-medium">
+                            ₹850
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm
+                              leading-6 mt-3">
+                        Handmade pasta finished with
+                        creamy truffle sauce.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dish 4 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72 object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Artisan Pizza">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="font-serif text-2xl">
+                            Artisan Pizza
+                        </h3>
+
+                        <span class="text-[#b8945f] font-medium">
+                            ₹650
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm
+                              leading-6 mt-3">
+                        Handcrafted pizza with fresh herbs
+                        and premium toppings.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dish 5 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72 object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Chocolate Dessert">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="font-serif text-2xl">
+                            Chocolate Dessert
+                        </h3>
+
+                        <span class="text-[#b8945f] font-medium">
+                            ₹420
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm
+                              leading-6 mt-3">
+                        Rich chocolate dessert with
+                        a delicate finish.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Dish 6 -->
+
+            <div class="group bg-white
+                        rounded-xl overflow-hidden
+                        shadow-sm hover:shadow-xl
+                        transition duration-500">
+
+                <div class="overflow-hidden">
+
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85"
+                        class="w-full h-72 object-cover
+                               group-hover:scale-105
+                               transition duration-700" alt="Creamy Pasta">
+
+                </div>
+
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="font-serif text-2xl">
+                            Creamy Pasta
+                        </h3>
+
+                        <span class="text-[#b8945f] font-medium">
+                            ₹720
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm
+                              leading-6 mt-3">
+                        Creamy pasta prepared with fresh
+                        herbs and premium cheese.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Menu Button -->
+
+        <div class="text-center mt-12">
+
+            <button class="group inline-flex items-center
+                       gap-3 border
+                       border-[#b8945f]
+                       text-[#8d6b3d]
+                       px-8 py-3
+                       rounded-full
+                       hover:bg-[#b8945f]
+                       hover:text-white
+                       transition duration-300">
+
+                <a href="index4.html">View Full Menu</a>
+
+                <span class="transition-transform
+                             group-hover:translate-x-1">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                    DINING EXPERIENCE
+    ================================================= -->
+
+    <section class="bg-[#171614]
+                    text-white
+                    py-24">
+
+        <div class="max-w-7xl mx-auto
+                    px-6 md:px-12">
+
+
+            <div class="text-center mb-14">
+
+                <p class="uppercase
+                          tracking-[5px]
+                          text-xs
+                          text-[#b8945f]">
+                    More Ways To Dine
+                </p>
+
+
+                <h2 class="font-serif
+                           text-4xl md:text-6xl
+                           mt-5">
+                    Choose your experience
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+
+                <!-- Experience 1 -->
+
+                <div class="group border
+                            border-gray-700
+                            p-9 rounded-xl
+                            hover:border-[#b8945f]
+                            transition duration-300">
+
+                    <span class="font-serif
+                                 text-4xl
+                                 text-[#b8945f]">
+                        01
+                    </span>
+
+                    <h3 class="font-serif
+                               text-2xl mt-7">
+                        Fine Dining
+                    </h3>
+
+                    <p class="text-gray-400
+                              leading-7 mt-4">
+                        Enjoy an elegant dining experience
+                        with carefully prepared dishes and
+                        attentive service.
+                    </p>
+
+                    <a href="#" class="inline-block
+                              mt-7 text-sm
+                              text-[#d6bc91]
+                              border-b
+                              border-[#b8945f]
+                              pb-1">
+                        Discover →
+                    </a>
+
+                </div>
+
+
+                <!-- Experience 2 -->
+
+                <div class="group border
+                            border-gray-700
+                            p-9 rounded-xl
+                            hover:border-[#b8945f]
+                            transition duration-300">
+
+                    <span class="font-serif
+                                 text-4xl
+                                 text-[#b8945f]">
+                        02
+                    </span>
+
+                    <h3 class="font-serif
+                               text-2xl mt-7">
+                        Private Dining
+                    </h3>
+
+                    <p class="text-gray-400
+                              leading-7 mt-4">
+                        Celebrate special moments in a
+                        private and comfortable dining
+                        environment.
+                    </p>
+
+                    <a href="#" class="inline-block
+                              mt-7 text-sm
+                              text-[#d6bc91]
+                              border-b
+                              border-[#b8945f]
+                              pb-1">
+                        Discover →
+                    </a>
+
+                </div>
+
+
+                <!-- Experience 3 -->
+
+                <div class="group border
+                            border-gray-700
+                            p-9 rounded-xl
+                            hover:border-[#b8945f]
+                            transition duration-300">
+
+                    <span class="font-serif
+                                 text-4xl
+                                 text-[#b8945f]">
+                        03
+                    </span>
+
+                    <h3 class="font-serif
+                               text-2xl mt-7">
+                        Room Service
+                    </h3>
+
+                    <p class="text-gray-400
+                              leading-7 mt-4">
+                        Enjoy your favourite dishes from
+                        the comfort and privacy of your room.
+                    </p>
+
+                    <a href="#" class="inline-block
+                              mt-7 text-sm
+                              text-[#d6bc91]
+                              border-b
+                              border-[#b8945f]
+                              pb-1">
+                        Discover →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                         CTA
+    ================================================= -->
+
+    <section class="relative
+                    py-28 px-6
+                    overflow-hidden">
+
+
+        <div class="absolute inset-0
+                    bg-[#211f1c]">
+        </div>
+
+
+        <div class="absolute
+                    -top-32 -right-32
+                    w-96 h-96
+                    rounded-full
+                    bg-[#b8945f]/10
+                    blur-3xl">
+        </div>
+
+
+        <div class="absolute
+                    -bottom-32 -left-32
+                    w-96 h-96
+                    rounded-full
+                    bg-[#b8945f]/10
+                    blur-3xl">
+        </div>
+
+
+        <div class="relative
+                    max-w-4xl mx-auto
+                    text-center text-white">
+
+
+            <p class="uppercase
+                      tracking-[6px]
+                      text-xs
+                      text-[#b8945f]">
+                Your Table Awaits
+            </p>
+
+
+            <h2 class="font-serif
+                       text-5xl md:text-7xl
+                       mt-6 leading-tight">
+
+                An evening worth
+                <span class="italic
+                             text-[#d6bc91]">
+                    remembering.
+                </span>
+
+            </h2>
+
+
+            <p class="max-w-2xl mx-auto
+                      text-gray-400
+                      leading-7 mt-6">
+
+                Join us for an exceptional dining experience
+                where exquisite flavours, elegant surroundings
+                and warm hospitality come together.
+
+            </p>
+
+
+            <div class="flex flex-col
+                        sm:flex-row
+                        justify-center
+                        items-center
+                        gap-4 mt-10">
+
+
+                <button class="group flex items-center
+                           gap-3 bg-[#b8945f]
+                           text-white
+                           px-8 py-4
+                           rounded-full
+                           font-medium
+                           transition duration-300
+                           hover:bg-[#c8a875]
+                           hover:shadow-[0_15px_40px_rgba(184,148,95,0.25)]">
+
+                    Book a Table
+
+                    <span class="transition-transform
+                                 group-hover:translate-x-1">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="border border-gray-600
+                           text-white
+                           px-8 py-4
+                           rounded-full
+                           hover:border-[#b8945f]
+                           hover:text-[#d6bc91]
+                           transition duration-300">
+
+                    View Menu
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                       PREMIUM FOOTER
+    ================================================= -->
+
+    <footer class="bg-[#11100f]
+                   text-white">
+
+
+        <!-- Footer Main -->
+
+        <div class="max-w-7xl mx-auto
+                    px-6 md:px-12
+                    py-16">
+
+
+            <div class="grid grid-cols-1
+                        sm:grid-cols-2
+                        lg:grid-cols-4
+                        gap-12">
+
+
+                <!-- Brand -->
+
+                <div>
+
+                    <h2 class="font-serif
+                               text-3xl
+                               tracking-[5px]">
+                        AURELIA
+                    </h2>
+
+
+                    <p class="uppercase
+                              tracking-[4px]
+                              text-[9px]
+                              text-[#b8945f]
+                              mt-2">
+                        Hotel & Dining
+                    </p>
+
+
+                    <p class="text-gray-500
+                              leading-7
+                              mt-6 max-w-xs">
+                        A refined destination where
+                        exceptional hospitality, beautiful
+                        spaces and memorable dining meet.
+                    </p>
+
+
+                    <div class="flex gap-3 mt-7">
+
+                        <a href="#" class="w-9 h-9
+                                  rounded-full
+                                  border border-gray-700
+                                  flex items-center
+                                  justify-center
+                                  text-xs
+                                  hover:border-[#b8945f]
+                                  hover:text-[#b8945f]
+                                  transition">
+                            IG
+                        </a>
+
+                        <a href="#" class="w-9 h-9
+                                  rounded-full
+                                  border border-gray-700
+                                  flex items-center
+                                  justify-center
+                                  text-xs
+                                  hover:border-[#b8945f]
+                                  hover:text-[#b8945f]
+                                  transition">
+                            FB
+                        </a>
+
+                        <a href="#" class="w-9 h-9
+                                  rounded-full
+                                  border border-gray-700
+                                  flex items-center
+                                  justify-center
+                                  text-xs
+                                  hover:border-[#b8945f]
+                                  hover:text-[#b8945f]
+                                  transition">
+                            X
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Explore -->
+
+                <div>
+
+                    <h3 class="text-xs
+                               uppercase
+                               tracking-[3px]
+                               text-[#d6bc91]">
+                        Explore
+                    </h3>
+
+
+                    <div class="flex flex-col
+                                gap-4 mt-6
+                                text-gray-500
+                                text-sm">
+
+                        <a href="#" class="hover:text-white transition">
+                            Home
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Rooms & Suites
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Dining
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            About Us
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Information -->
+
+                <div>
+
+                    <h3 class="text-xs
+                               uppercase
+                               tracking-[3px]
+                               text-[#d6bc91]">
+                        Dining Hours
+                    </h3>
+
+
+                    <div class="flex flex-col
+                                gap-4 mt-6
+                                text-gray-500
+                                text-sm">
+
+                        <div>
+
+                            <p class="text-gray-300">
+                                Breakfast
+                            </p>
+
+                            <p class="mt-1">
+                                7:00 AM – 10:30 AM
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-gray-300">
+                                Lunch
+                            </p>
+
+                            <p class="mt-1">
+                                12:30 PM – 3:30 PM
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-gray-300">
+                                Dinner
+                            </p>
+
+                            <p class="mt-1">
+                                7:00 PM – 11:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Visit -->
+
+                <div>
+
+                    <h3 class="text-xs
+                               uppercase
+                               tracking-[3px]
+                               text-[#d6bc91]">
+                        Visit Us
+                    </h3>
+
+
+                    <p class="text-gray-500
+                              text-sm
+                              leading-7 mt-6">
+
+                        Aurelia Hotel & Dining<br>
+                        24 Palace Road<br>
+                        Indore, Madhya Pradesh
+
+                    </p>
+
+
+                    <p class="text-gray-500
+                              text-sm mt-4">
+                        +91 98765 43210
+                    </p>
+
+
+                    <button class="mt-6
+                               text-[#b8945f]
+                               text-sm
+                               border-b
+                               border-[#b8945f]
+                               pb-1
+                               hover:text-[#d6bc91]
+                               transition">
+
+                        Get Directions →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gold Line -->
+
+        <div class="max-w-7xl mx-auto
+                    px-6 md:px-12">
+
+            <div class="h-px
+                        bg-gradient-to-r
+                        from-transparent
+                        via-[#b8945f]/50
+                        to-transparent">
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="max-w-7xl mx-auto
+                    px-6 md:px-12
+                    py-7
+                    flex flex-col
+                    md:flex-row
+                    justify-between
+                    items-center
+                    gap-5">
+
+
+            <p class="text-gray-600 text-xs">
+                © 2026 Aurelia Hotel.
+                All rights reserved.
+            </p>
+
+
+            <div class="flex gap-7
+                        text-gray-600
+                        text-xs">
+
+                <a href="#" class="hover:text-white transition">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Terms
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Cookies
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
